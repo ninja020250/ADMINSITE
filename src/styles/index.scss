@@ -1,0 +1,16 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+@import "./sidebar.scss";
+
+
+body{
+    a{
+        text-decoration: none !important;
+    }
+    .wrapper {
+        top: 0;
+        min-height: 100vh;
+        position: relative;
+    }
+    
+}
