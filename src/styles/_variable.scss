@@ -59,7 +59,7 @@ $light-azure:                rgba($info-color, .2);
 $light-green:                rgba($success-color, .2);
 $light-orange:               rgba($warning-color, .2);
 $light-red:                  rgba($danger-color, .2); 
-
+$light-gold:  #fed500;
 
 //== Components
 //
@@ -108,7 +108,8 @@ $font-size-small:              12px !default;
 $font-size-medium:             16px !default; 
 $font-size-large:              18px !default;
 $font-size-large-navbar:       20px !default;
-
+$font-size-icon-large:               28px !default;
+$font-size-icon-small:               22px !default;
 $font-size-h1:                 52px !default;
 $font-size-h2:                 36px !default;
 $font-size-h3:                 28px !default;
@@ -213,8 +214,8 @@ $red-color-bottom: 	                #bb0502;
 $purple-color-top: 	                #df55e1;
 $purple-color-bottom: 	            #943bea;
 
-$pink-color-top: 		            #ff2a63;
-$pink-color-bottom: 	            #ff2e2e;
+$pink-color-top: 		            #ec3f8c;
+$pink-color-bottom: 	            #324bc3;
 
 $black-color-top:	 	            #787878;
 $black-color-bottom: 	            #343434;
