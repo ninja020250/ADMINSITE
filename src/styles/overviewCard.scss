@@ -1,0 +1,53 @@
+$orange-linear: linear-gradient(to top, #ffde00 0%, #f04f00);
+$blue-linear: linear-gradient(to bottom, #005bea, #00d8ff);
+.overview-card {
+  padding: 12px 19px;
+  width: 377px;
+  height: 200px;
+  border-radius: 3px;
+  color: $white-color;
+  position: relative;
+  .title {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffefe0;
+  }
+  .number {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  &-logo {
+    > i {
+      font-size: $font-size-icon-supper;
+    }
+  }
+  .area-chart {
+    width: calc(100% - 38px);
+    position: absolute;
+    bottom: 19px;
+    // .chart {
+    //   max-height: 100px;
+    // }
+  }
+}
+.card-orange {
+  background-image: $orange-linear;
+}
+.card-blue {
+  background-image: $blue-linear;
+}

@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import "../styles/index.scss";
 import SideBar from "../components/page/main/layout/SideBar";
 import MainPanel from "../components/page/main/layout/MainPanel";
+
 class App extends Component {
   componentDidMount() {
     $("#sidebartoggler").click(function() {
@@ -16,18 +17,7 @@ class App extends Component {
         $("#sidebar").addClass("toggle");
       }
     });
-    // $(".sidebar-hiden").hover(
-    //   function() {
-    //     console.log("hover");
-    //     $(this).removeClass("sidebar-hiden");
-    //     $(".expand-sidebar").removeClass("expand-sidebar");
-    //   },
-    //   function() {
-    //     console.log("unhover");
-    //     $(this).addClass("sidebar-hiden");
-    //     $(".main-panel").addClass("expand-sidebar");
-    //   }
-    // );
+
     $("#sidebar").hover(
       function() {
         if ($(this).hasClass("sidebar-hiden")) {
