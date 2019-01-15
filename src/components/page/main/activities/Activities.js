@@ -8,33 +8,72 @@ export default class Activities extends Component {
         <div className="card ">
           <div className="card-body">
             <div className="col-12 activities-left">
-              <div className="activities">
-                <ul className="activities-user">
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                  <li>
-                    <UserActivity />
-                  </li>
-                </ul>
+              <div id="timeline">
+                <div>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section class="year">
+                    <section>
+                      <ul>
+                        <li>
+                          Satoshi Nakamoto began working on the Bitcoin concept.
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
