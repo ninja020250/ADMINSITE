@@ -7,14 +7,14 @@ export default class Activities extends Component {
         <div className="activities-card-title">Activities</div>
         <div className="card ">
           <div className="card-body">
-            <div className="col-12 activities-left">
+            <div className="activities-left">
               <div id="timeline">
                 <div>
                   <section class="year">
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -23,7 +23,7 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -32,7 +32,7 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -41,7 +41,7 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -50,7 +50,7 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -59,7 +59,7 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -68,7 +68,7 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          Satoshi Nakamoto began working on the Bitcoin concept.
+                          <UserActivity />
                         </li>
                       </ul>
                     </section>
@@ -86,23 +86,17 @@ export default class Activities extends Component {
 class UserActivity extends Component {
   render() {
     return (
-      <div className="user-activities ">
-        <div className="activities-point">
-          <div className="activities-point-inner" />
+      <div class="media user-activity">
+        <div className="image">
+          <img
+            src="https://i.ytimg.com/vi/kwtm5G2inWE/hqdefault.jpg"
+            class="mr-3"
+            alt="..."
+          />
         </div>
-        <div className="media activities-content">
-          <div className="activities-ava align-self-start mr-3">
-            <img
-              src="https://i.pinimg.com/originals/75/b3/9d/75b39d9c54d97dff16bc0b545a37c43c.jpg"
-              alt="sj"
-            />
-          </div>
-          <div className="activities-text media-body">
-            <p className="activities-text-title mt-0">New Customer Feedback</p>
-            <p className="activities-text-content">
-              by Danny bob/ 2 minutes ago
-            </p>
-          </div>
+        <div class="media-body">
+          <h5 class="mt-0">News Customer Feedback aasdasdasdasd</h5>
+          By Danny bob /2 minutes ago
         </div>
       </div>
     );
