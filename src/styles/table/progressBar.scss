@@ -1,0 +1,11 @@
+.bg-gradient-x-danger {
+  @include background-gradien-to-right(#ec3f8c, #ff8fc1);
+}
+.progress-sm{
+    height: .3rem!important;
+    width: 80%;
+}
+.progress-bar{
+  
+    background-color: #fff;
+}

@@ -1,38 +1,81 @@
-@mixin icon-gradient ($top-color, $bottom-color){
-    background: $top-color;
-    background: -moz-linear-gradient(top,  $top-color 0%, $bottom-color 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color));
-    background: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
-    background: -o-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
-    background: -ms-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
-    background: linear-gradient(to bottom,  $top-color 0%,$bottom-color 100%);
-    background-size: 150% 150%;
+@mixin icon-gradient($top-color, $bottom-color) {
+  background: $top-color;
+  background: -moz-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top-color),
+    color-stop(100%, $bottom-color)
+  );
+  background: -webkit-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  background: -o-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  background: -ms-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  background: linear-gradient(to bottom, $top-color 0%, $bottom-color 100%);
+  background-size: 150% 150%;
 }
-@mixin icon-gradient-to-top ($top-color, $bottom-color){
-    background: $top-color;
-    background: -moz-linear-gradient(bottom,  $top-color 0%, $bottom-color 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color));
-    background: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
-    background: -o-linear-gradient(bottom,  $top-color 0%,$bottom-color 100%);
-    background: -ms-linear-gradient(bottom,  $top-color 0%,$bottom-color 100%);
-    background: linear-gradient(to top,  $top-color 0%,$bottom-color 100%);
-    background-size: 150% 150%;
+@mixin icon-gradient-to-top($top-color, $bottom-color) {
+  background: $top-color;
+  background: -moz-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top-color),
+    color-stop(100%, $bottom-color)
+  );
+  background: -webkit-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  background: -o-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background: -ms-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background: linear-gradient(to top, $top-color 0%, $bottom-color 100%);
+  background-size: 150% 150%;
 }
-@mixin color-gradient-to-top ($top-color, $bottom-color){
-    color: $top-color;
-    color: -moz-linear-gradient(bottom,  $top-color 0%, $bottom-color 100%);
-    color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color));
-    color: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
-    color: -o-linear-gradient(bottom,  $top-color 0%,$bottom-color 100%);
-    color: -ms-linear-gradient(bottom,  $top-color 0%,$bottom-color 100%);
-    color: linear-gradient(to top,  $top-color 0%,$bottom-color 100%);
+@mixin color-gradient-to-top($top-color, $bottom-color) {
+  color: $top-color;
+  color: -moz-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  color: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top-color),
+    color-stop(100%, $bottom-color)
+  );
+  color: -webkit-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  color: -o-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  color: -ms-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  color: linear-gradient(to top, $top-color 0%, $bottom-color 100%);
 }
-@mixin border-gradient-to-top ($top-color, $bottom-color){
-    // color: $top-color;
-    border-image: -moz-linear-gradient(bottom,  $top-color 0%, $bottom-color 100%);
-    border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color));
-    border-image: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
-    border-image: -o-linear-gradient(bottom,  $top-color 0%,$bottom-color 100%);
-    border-image: -ms-linear-gradient(bottom,  $top-color 0%,$bottom-color 100%);
-    border-image: linear-gradient(to top,  $top-color 0%,$bottom-color 100%);
+@mixin border-gradient-to-top($top-color, $bottom-color) {
+  // color: $top-color;
+  border-image: -moz-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  border-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top-color),
+    color-stop(100%, $bottom-color)
+  );
+  border-image: -webkit-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+  border-image: -o-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  border-image: -ms-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  border-image: linear-gradient(to top, $top-color 0%, $bottom-color 100%);
+}
+@mixin background-gradien-to-right($left-color, $right-color) {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($left-color),
+    to($right-color)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    $left-color 0,
+    $right-color 100%
+  );
+  background-image: -moz-
+    oldlinear-gradient(left, $left-color 0, $right-color 100%);
+  background-image: -o-linear-gradient(left, $left-color 0, $right-color 100%);
+  background-image: linear-gradient(to right, $left-color 0, $right-color 100%);
+  background-repeat: repeat-x;
 }

@@ -1,6 +1,16 @@
 //view all
-.btn-ViewAllTransactions{
-position: absolute;
-top: 20px;
-right: 20px;
+.btn-ViewAllTransactions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.category-btn {
+  border-radius: 6px;
+  padding: 3px 10px;
+  background-color: rgba(238, 244, 249, 0.7);
+  font-weight: bold;
+  i {
+    margin-right: 5px;
+  }
 }

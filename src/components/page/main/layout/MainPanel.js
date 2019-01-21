@@ -13,9 +13,9 @@ export default class MainPanel extends Component {
           <Activities />
         </div> */}
         {/* <OverviewCards/> */}
-        <div className="col-xl-12 col-lg-12">
+    
           <Table1 />
-        </div>
+        
       </div>
     );
   }
