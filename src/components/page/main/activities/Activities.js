@@ -4,13 +4,16 @@ export default class Activities extends Component {
   render() {
     return (
       <div className="activities-card">
-        <div className="activities-card-title">Activities</div>
+        {/* <div className="activities-card-title">Activities</div> */}
         <div className="card ">
-          <div className="card-body">
+          <div className="card-header">
+            <h4 className="card-title">Activities</h4>
+          </div>
+          <div className="card-body pt-5">
             <div className="activities-left">
               <div id="timeline">
                 <div>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -23,7 +26,7 @@ export default class Activities extends Component {
                       </ul>
                     </section>
                   </section>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -36,7 +39,7 @@ export default class Activities extends Component {
                       </ul>
                     </section>
                   </section>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -49,7 +52,7 @@ export default class Activities extends Component {
                       </ul>
                     </section>
                   </section>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -62,7 +65,7 @@ export default class Activities extends Component {
                       </ul>
                     </section>
                   </section>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -75,7 +78,7 @@ export default class Activities extends Component {
                       </ul>
                     </section>
                   </section>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -88,7 +91,7 @@ export default class Activities extends Component {
                       </ul>
                     </section>
                   </section>
-                  <section class="year">
+                  <section className="year">
                     <section>
                       <ul>
                         <li>
@@ -114,12 +117,12 @@ export default class Activities extends Component {
 export class UserActivity extends Component {
   render() {
     return (
-      <div class="media user-activity">
+      <div className="media user-activity">
         <div className="image">
-          <img src={`${this.props.image}`} class="mr-3" alt="..." />
+          <img src={`${this.props.image}`} className="mr-3" alt="..." />
         </div>
-        <div class="media-body">
-          <h5 class="mt-0">{this.props.content}</h5>
+        <div className="media-body">
+          <h5 className="mt-0">{this.props.content}</h5>
           {this.props.time}
         </div>
       </div>

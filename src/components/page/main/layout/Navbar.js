@@ -94,15 +94,15 @@ class DropDownNotification extends Component {
         <div className="notify-count count1 common-count" count="0">
           <div className="value">0</div>
         </div>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <div class="card">
-            <div class="card-header">
-              <div class=" il">Recent Notification</div>
+        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div className="card">
+            <div className="card-header">
+              <div className=" il">Recent Notification</div>
               <div className="notify-count count2 il fr" count="0">
                 <div className="value">0</div>
               </div>
             </div>
-            <div class="card-body">
+            <div className="card-body">
               <ul>
                 <li>
                   <UserActivity 

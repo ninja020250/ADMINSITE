@@ -4,6 +4,7 @@ import OverviewCard from "../card/OverviewCard";
 import OverviewCards from "../card/OverviewCards";
 import Activities from "../activities/Activities";
 import Table1 from "../table/Table1";
+import ProuductSold from '../ProuductSold'
 export default class MainPanel extends Component {
   render() {
     return (
@@ -15,7 +16,9 @@ export default class MainPanel extends Component {
         <div className="main-wrapper">
           <OverviewCards />
           <div className="row mt-5">
-            <div className="col-8" />
+            <div className="col-8" >
+            <ProuductSold/>
+            </div>
             <div className="col-4">
               <Activities />
             </div>

@@ -13,10 +13,8 @@
       font-weight: bold;
   }
   > .card {
-    border-radius: 3px;
-    box-shadow: 0px 8px 25px 0 rgba(16, 17, 43, 0.08);
+ 
     border: none;
-    background-color: #ffffff;
     &::after {
       display: block;
       content: "";

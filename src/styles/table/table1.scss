@@ -11,6 +11,7 @@ $pendingColor: #fad02c;
 .pending{
     color: $pendingColor;
 }
+
 #recent-sale {
   td:first-child {
     color: #324bc3;
@@ -27,20 +28,7 @@ $pendingColor: #fad02c;
   > .card {
     border: none;
     .card-header {
-      border-bottom: none;
-      background-color: #fff;
-      .card-title {
-        font-weight: bold;
-        color: #262941;
-        margin-bottom: 0;
-        letter-spacing: 0.05rem;
-        font-size: 16px;
-      }
       .heading-elements {
-        background-color: inherit;
-        position: absolute;
-        top: 10px;
-        right: 20px;
         a {
           //   padding: 0 8px;
           font-weight: bold;
@@ -52,9 +40,6 @@ $pendingColor: #fad02c;
       }
     }
     .card-body {
-      border-radius: 3px;
-      box-shadow: 0px 8px 25px 0 rgba(16, 17, 43, 0.08);
-
       .table thead th {
         background-color: rgba(238, 244, 249, 0.15);
         border-bottom: 1px solid #dee2e6;
