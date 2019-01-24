@@ -12,10 +12,20 @@ export default class MainPanel extends Component {
         {/* <div className="col-xl-4 col-lg-12">
           <Activities />
         </div> */}
-        {/* <OverviewCards/> */}
-    
-          <Table1 />
-        
+        <div className="main-wrapper">
+          <OverviewCards />
+          <div className="row mt-5">
+            <div className="col-8" />
+            <div className="col-4">
+              <Activities />
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-12">
+              <Table1 />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

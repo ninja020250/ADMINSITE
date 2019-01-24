@@ -1,6 +1,15 @@
-$successColor: #28d094;
+$paidColor: #28d094;
+$declinedColor: #ec3f8c;
+$pendingColor: #fad02c;
+
 .paid {
-  color: $successColor;
+  color: $paidColor;
+}
+.declined{
+    color: $declinedColor;
+}
+.pending{
+    color: $pendingColor;
 }
 #recent-sale {
   td:first-child {

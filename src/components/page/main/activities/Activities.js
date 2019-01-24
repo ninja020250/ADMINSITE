@@ -14,7 +14,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -23,7 +27,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -32,7 +40,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -41,7 +53,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -50,7 +66,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -59,7 +79,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -68,7 +92,11 @@ export default class Activities extends Component {
                     <section>
                       <ul>
                         <li>
-                          <UserActivity />
+                          <UserActivity
+                            image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                            content="blackpink liked your post"
+                            time="2 days ago/ 8 minutes"
+                          />
                         </li>
                       </ul>
                     </section>
@@ -83,20 +111,16 @@ export default class Activities extends Component {
   }
 }
 
-class UserActivity extends Component {
+export class UserActivity extends Component {
   render() {
     return (
       <div class="media user-activity">
         <div className="image">
-          <img
-            src="https://i.ytimg.com/vi/kwtm5G2inWE/hqdefault.jpg"
-            class="mr-3"
-            alt="..."
-          />
+          <img src={`${this.props.image}`} class="mr-3" alt="..." />
         </div>
         <div class="media-body">
-          <h5 class="mt-0">News Customer Feedback aasdasdasdasd</h5>
-          By Danny bob /2 minutes ago
+          <h5 class="mt-0">{this.props.content}</h5>
+          {this.props.time}
         </div>
       </div>
     );

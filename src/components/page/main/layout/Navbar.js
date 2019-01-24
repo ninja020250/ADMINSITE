@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-
+import { UserActivity } from "../activities/Activities";
 export default class Navbar extends Component {
-  componentDidMount() {
-  
-  }
+  componentDidMount() {}
   render() {
     return (
       <nav className="navbar navbar-expand-lg">
@@ -96,24 +94,46 @@ class DropDownNotification extends Component {
         <div className="notify-count count1 common-count" count="0">
           <div className="value">0</div>
         </div>
-        <div
-          className="dropdown-menu notification-dropdown dd"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <div className="header">
-            <div className="container">
-              <div className="text fl">Notifications</div>
-              <div className="notify-count common-count count2 fl" count="0">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="card">
+            <div class="card-header">
+              <div class=" il">Recent Notification</div>
+              <div className="notify-count count2 il fr" count="0">
                 <div className="value">0</div>
               </div>
             </div>
-          </div>
-          <div className="items">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+            <div class="card-body">
+              <ul>
+                <li>
+                  <UserActivity 
+                  image="https://i.pinimg.com/originals/68/02/93/680293e226b6edbd34f8e1ec55e955dc.png"
+                  content="blackpink liked your post"
+                  time="2 days ago/ 8 minutes"/>
+                </li>
+                <li>
+                  <UserActivity 
+                  image="https://i.pinimg.com/originals/0f/8b/b0/0f8bb01845f7b10827e0afdaee59bcaa.png"
+                  content="blackpink punch your face 2 times "
+                  time="2 days ago/ 8 minutes"/>
+                </li>
+                <li>
+                  <UserActivity 
+                  image="https://pbs.twimg.com/profile_images/979349990978940929/mFKt2QFK_400x400.jpg"
+                  content="blackpink liked your post"
+                  time="2 days ago/ 8 minutes"/>
+                </li>
+                <li>
+                  <UserActivity 
+                  image="https://steamuserimages-a.akamaihd.net/ugc/965348083814963524/ABA356016F1A367BEAC9398743FB85BAAF3D4DDF/"
+                  content="blackpink liked your post"
+                  time="2 days ago/ 8 minutes"/>
+                </li>
+              </ul>
+           
+            </div>
+            <div className="card-footer">
+              All Activity
+              </div>
           </div>
         </div>
       </div>
@@ -153,7 +173,10 @@ class UserButton extends Component {
             alt="justin"
           />
         </div>
-        <div className="dropdown-menu user-dropdown" aria-labelledby="dropdownUser">
+        <div
+          className="dropdown-menu user-dropdown"
+          aria-labelledby="dropdownUser"
+        >
           <a className="dropdown-item" href="#">
             Action
           </a>

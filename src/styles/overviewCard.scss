@@ -1,6 +1,11 @@
 $orange-linear: linear-gradient(to top, #ffde00 0%, #f04f00);
 $blue-linear: linear-gradient(to bottom, #005bea, #00d8ff);
+.overviews-header{
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
 .overview-card {
+  
   padding: 12px 19px;
   width: 377px;
   height: 200px;
