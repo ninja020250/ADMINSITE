@@ -79,3 +79,22 @@
   background-image: linear-gradient(to right, $left-color 0, $right-color 100%);
   background-repeat: repeat-x;
 }
+//Box -shadow
+
+@mixin blurShadow($color) {
+  opacity: 0.6;
+  content: "";
+  left: 0;
+  margin-left: auto; 
+  margin-right: auto; 
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: $color;
+  -webkit-filter: blur(11px);
+  -moz-filter: blur(11px);
+  -o-filter: blur(11px);
+  -ms-filter: blur(11px);
+  filter: blur(11px);
+  bottom: -7%;
+}

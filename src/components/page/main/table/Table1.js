@@ -10,7 +10,7 @@ const sampleData = [
       title: "Paid"
     },
     categories: {
-      icon: "fa fa-television",
+      icon: require("../../../../static/icon/food.svg"),
       title: "food"
     },
     shipping: {
@@ -29,8 +29,8 @@ const sampleData = [
       title: "Declined"
     },
     categories: {
-      icon: "fa fa-television",
-      title: "food"
+      icon: require("../../../../static/icon/electronics.svg"),
+      title: "electronics"
     },
     shipping: {
       min: 0,
@@ -48,8 +48,8 @@ const sampleData = [
       title: "Pending"
     },
     categories: {
-      icon: "fa fa-television",
-      title: "food"
+      icon: require("../../../../static/icon/cosmetology.svg"),
+      title: "cosmetology"
     },
     shipping: {
       min: 0,
@@ -66,7 +66,7 @@ const sampleData = [
       title: "Paid"
     },
     categories: {
-      icon: "fa fa-television",
+      icon:  require("../../../../static/icon/food.svg"),
       title: "food"
     },
     shipping: {
@@ -196,7 +196,10 @@ class CategoryButton extends Component {
     return (
       <div className="">
         <button className="btn category-btn ">
-          <i className={`${this.props.icon}`} aria-hidden="true" />
+          {/* <i className={`${this.props.icon}`} aria-hidden="true" /> */}
+       <svg src={this.props.icon} focusable="false" className="svg custom-icon" alt="" >
+       {/* <use xlink:href="#symbol-id"></use> */}
+       </svg>
           {this.props.title}
         </button>
       </div>

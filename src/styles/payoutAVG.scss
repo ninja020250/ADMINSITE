@@ -1,0 +1,63 @@
+.payoutAVG {
+  .header-element {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .avg-button {
+    input[type="checkbox"] {
+      position: relative;
+      width: 140px;
+      height: 30px;
+      -webkit-appearance: none;
+      background-color: #ebeff2;
+      outline: none;
+      border-radius: 15px;
+      transition: 0.5s;
+    }
+    input:checked[type="checkbox"] {
+      background-color: #ebeff2;
+    }
+    input[type="checkbox"]:before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "Week";
+      position: absolute;
+      width: 70px;
+      height: 30px;
+      border-radius: 15px;
+      top: 0;
+      left: 0;
+      @include background-gradien-to-right(#324bc3, #ec3f8c);
+      font-weight: bold;
+      color: $white-color;
+      transition: 0.4s;
+      z-index: 1;
+    }
+    input[type="checkbox"]:after {
+      content: "Month";
+      position: absolute;
+      right: 10%;
+      top: 10%;
+      color: #9d9d9d;
+      z-index: 999;
+    }
+    input:checked[type="checkbox"]:after {
+      content: "Week";
+      position: absolute;
+      left: 10%;
+      z-index: 0;
+      top: 10%;
+      color: #9d9d9d;
+    }
+    input:checked[type="checkbox"]::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 70px;
+      content: "Month";
+      z-index: 1;
+    }
+  }
+}

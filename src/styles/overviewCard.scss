@@ -1,11 +1,9 @@
-$orange-linear: linear-gradient(to top, #ffde00 0%, #f04f00);
-$blue-linear: linear-gradient(to bottom, #005bea, #00d8ff);
-.overviews-header{
+
+.overviews-header {
   padding-left: 15px;
   padding-bottom: 25px;
 }
 .overview-card {
-  
   padding: 12px 19px;
   width: 377px;
   height: 200px;
@@ -50,9 +48,37 @@ $blue-linear: linear-gradient(to bottom, #005bea, #00d8ff);
     // }
   }
 }
+
+
 .card-orange {
   background-image: $orange-linear;
+  &::before {
+    width: 90%;
+    height: 150px;
+    @include blurShadow($orange-linear);
+  }
 }
 .card-blue {
   background-image: $blue-linear;
+  &::before {
+    width: 90%;
+    height: 150px;
+    @include blurShadow( $blue-linear);
+  }
+}
+.card-green {
+  background-image: $green-linear;
+  &::before {
+    width: 90%;
+    height: 150px;
+    @include blurShadow( $green-linear);
+  }
+}
+.card-pink {
+  background-image: $pink-linear;
+  &::before {
+    width: 90%;
+    height: 150px;
+    @include blurShadow( $pink-linear);
+  }
 }

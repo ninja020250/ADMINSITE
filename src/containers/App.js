@@ -3,9 +3,13 @@ import { Provider } from "react-redux";
 import "../styles/index.scss";
 import SideBar from "../components/page/main/layout/SideBar";
 import MainPanel from "../components/page/main/layout/MainPanel";
-
+import icon from '../lib/handleIconSVG.js'
+import $ from 'jquery'
 class App extends Component {
+  
   componentDidMount() {
+    $("svg.svg").each(icon);
+    // $("svg.white-svg").each(icon);
     $("#sidebartoggler").click(function() {
       if ($("#sidebar").hasClass("sidebar-hiden")) {
         $("#sidebar").removeClass("sidebar-hiden");
@@ -34,6 +38,7 @@ class App extends Component {
       //  $(".main-panel").addClass("expand-sidebar");
       }
     );
+  
   }
   render() {
     return (

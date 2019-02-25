@@ -13,7 +13,7 @@ $smoke-bg:                   #F5F5F5 !default;
 
 $black-bg:                   rgba(30,30,30,.97) !default;
 
-$black-color:                #333333 !default;
+$black-color:                #262941 !default;
 $black-hr:                   #444444 !default;
 
 $light-gray:                 #eef4f9 !default;
@@ -60,6 +60,10 @@ $light-green:                rgba($success-color, .2);
 $light-orange:               rgba($warning-color, .2);
 $light-red:                  rgba($danger-color, .2); 
 $light-gold:  #fed500;
+$orange-linear: linear-gradient(to top, #ffde00 0%, #f04f00);
+$blue-linear: linear-gradient(to bottom, #005bea, #00d8ff);
+$green-linear: linear-gradient(to bottom, #009f0f 0%, #00ff7e);
+$pink-linear:  linear-gradient(to bottom, #ec3f8c, #ff9979);
 
 //== Components
 //
@@ -108,9 +112,9 @@ $font-size-small:              12px !default;
 $font-size-medium:             16px !default; 
 $font-size-large:              18px !default;
 $font-size-large-navbar:       20px !default;
-$font-size-icon-large:               28px !default;
-$font-size-icon-small:               22px !default;
-$font-size-icon-supper :               42px !default;
+$font-size-icon-large:         28px !default;
+$font-size-icon-small:         22px !default;
+$font-size-icon-supper :       42px !default;
 $font-size-h1:                 52px !default;
 $font-size-h2:                 36px !default;
 $font-size-h3:                 28px !default;

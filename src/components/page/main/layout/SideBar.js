@@ -11,7 +11,7 @@ export default class SideBar extends Component {
         <div className="sidebar-wrapper">
           <div className="logo">
             <div href="#" className="simple-text">
-            <i className="fa fa-firefox" aria-hidden="true"></i>
+            <i className="icon-logo-1-cuong" aria-hidden="true"></i>
             <a href="#" className="logo-text">Dashboard</a>
             </div>
           </div>
@@ -26,7 +26,8 @@ export default class SideBar extends Component {
                 aria-controls="dashboard"
                 
               >
-                <i className="fa fa-television" aria-hidden="true"></i>
+                <i class="icon-dashboard"  data-icon="a"></i>
+                
                 <p>Dashboard</p>
               </a>
               <ul className="nav collapse" id="dashboard">
@@ -50,7 +51,7 @@ export default class SideBar extends Component {
                 aria-expanded="false"
                 aria-controls="layout"
               >
-               <i className="fa fa-th-large" aria-hidden="true"></i>
+               <i class="icon-layout" data-icon="b"></i>
                 <p>Layout</p>
               </a>
               <ul className="nav collapse" id="layout">
@@ -74,7 +75,7 @@ export default class SideBar extends Component {
                 aria-expanded="false"
                 aria-controls="ui-components"
               >
-              <i className="fa fa-codepen" aria-hidden="true"></i>
+              <i class="icon-ui-components" data-icon="c"></i>
                 <p>UI Components</p>
               </a>
               <ul className="nav collapse" id="ui-components">
@@ -98,7 +99,7 @@ export default class SideBar extends Component {
                 aria-expanded="false"
                 aria-controls="form"
               >
-           <i className="fa fa-laptop" aria-hidden="true"></i>
+           <i class="icon-forms" data-icon="e"></i>
                 <p>Form</p>
               </a>
               <ul className="nav collapse" id="form">
@@ -122,7 +123,7 @@ export default class SideBar extends Component {
                 aria-expanded="false"
                 aria-controls="table"
               >
-              <i className="fa fa-table" aria-hidden="true"></i>
+              <i class="icon-table" data-icon="d"></i>
                 <p>Table</p>
               </a>
               <ul className="nav collapse" id="table">

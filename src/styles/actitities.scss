@@ -141,7 +141,7 @@
         content: "";
         width: 11px;
         height: 11px;
-        border-color: #ec3f8c;
+        border-color: $purple-color-text;
         @include border-radius(50%);
         position: absolute;
         left: 29px;

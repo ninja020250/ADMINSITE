@@ -11,8 +11,9 @@ export default class ProuductSold extends Component {
           <div className="card-body mt-1">
             <ChartProuductSold
               chartId="barchart-productsold"
-              width="400"
-              height="400"
+              height="375"
+              // width="400"
+              // height="400"
             />
           </div>
         </div>
@@ -34,8 +35,9 @@ class ChartProuductSold extends Component {
   };  
 
   componentDidMount() {
+ 
     var ctx = document.getElementById("barchart-productsold");
-    ctx.height = 400;
+    ctx.height = this.props.height;
     var myChart = this.getBarChart(ctx);
   }
 
