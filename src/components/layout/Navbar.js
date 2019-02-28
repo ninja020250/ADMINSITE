@@ -1,10 +1,20 @@
 import React, { Component } from "react";
-import { UserActivity } from "../activities/Activities";
+import { UserActivity } from "../page/dashboard/Activities";
+import $ from 'jquery'
 export default class Navbar extends Component {
-  componentDidMount() {}
+  componentDidMount() {
+    $(".search-txt").hide();
+    $(".search-box i").click(function(){
+      if($(".search-txt").css("display") == "none"){
+        $(".search-txt").show();
+      }else{
+        $(".search-txt").hide();
+      }
+    });
+  }
   render() {
     return (
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg crolling-nav ">
         <button
           className="navbar-toggler"
           type="button"
@@ -146,12 +156,10 @@ class SearchBox extends Component {
       <div className="search-box">
         <input
           type="text"
-          className="search-txt"
-          placeholder="type something"
+          className="form-control search-txt animated slideInRight fast"
+          placeholder="type something faster"
         />
-        <a href="#" className="search-btn">
           <i className="fa fa-search" aria-hidden="true" />
-        </a>
       </div>
     );
   }
@@ -169,7 +177,7 @@ class UserButton extends Component {
           aria-expanded="false"
         >
           <img
-            src="https://pbs.twimg.com/profile_images/898295311893880832/bCps4HFV_400x400.jpg"
+            src="https://yt3.ggpht.com/a-/AAuE7mAJaPg2vQpOTNi9Rz8PfcPEaB2EJNX1q6V3Zg=s900-mo-c-c0xffffffff-rj-k-no"
             alt="justin"
           />
         </div>

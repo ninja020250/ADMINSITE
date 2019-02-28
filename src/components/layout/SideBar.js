@@ -1,13 +1,27 @@
 import React, { Component } from "react";
-const dataImage = require("../../../../static/img/sidebar-5.jpg");
+import $ from "jquery";
+const dataImage = require("../../static/img/sidebar-5.jpg");
 export default class SideBar extends Component {
+  componentDidMount() {
+    $(".nav .li-outer").click(e => {
+      console.log(e);
+      if ($(e.currentTarget).hasClass("active")) {
+        $(e.currentTarget).removeClass("active");
+      } else {
+        $(e.currentTarget).addClass("active");
+      }
+    });
+  }
+  handleSwitchPage = (page, innerPage) => {
+    // do something
+  };
   constructor(props) {
     super(props);
   }
   render() {
     return (
       <div
-        className="sidebar"
+        className="sidebar "
         id="sidebar"
         data-color="pink"
         data-image={dataImage}
@@ -17,19 +31,20 @@ export default class SideBar extends Component {
             <div href="#" className="simple-text">
               {/* <i className="icon-logo-1-cuong" aria-hidden="true" /> */}
               <svg
-                  src={require("../../../../static/icon/logo.svg")}
-                  focusable="false"
-                  className="svg nav-custom-icon "
-                  alt=""
-                />
+                src={require("../../static/icon/logo.svg")}
+                focusable="false"
+                className="svg nav-custom-icon "
+                alt=""
+              />
               <a href="#" className="logo-text">
                 Dashboard
               </a>
             </div>
           </div>
           <ul className="nav flex-column">
-            <li className="active">
+            <li className="li-outer">
               <a
+              
                 href="#"
                 className="has-arrow collapsed"
                 data-toggle="collapse"
@@ -39,12 +54,12 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-dashboard"  data-icon="a"></i> */}
                 <svg
-                  src={require("../../../../static/icon/dashboardSelected.svg")}
+                  src={require("../../static/icon/dashboardSelected.svg")}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
                 />
-             Dashboard
+                <span> Dashboard</span>
               </a>
               <ul className="nav collapse" id="dashboard">
                 <li>
@@ -58,7 +73,7 @@ export default class SideBar extends Component {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="li-outer">
               <a
                 href="#"
                 className="has-arrow collapsed"
@@ -69,12 +84,12 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-layout" data-icon="b" /> */}
                 <svg
-                  src={require("../../../../static/icon/layout.svg")}
+                  src={require("../../static/icon/layout.svg")}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
                 />
-              Layout
+                <span> Layout</span>
               </a>
               <ul className="nav collapse" id="layout">
                 <li>
@@ -88,7 +103,7 @@ export default class SideBar extends Component {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="li-outer">
               <a
                 href="#"
                 className="has-arrow collapsed"
@@ -99,12 +114,12 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-ui-components" data-icon="c" /> */}
                 <svg
-                  src={require("../../../../static/icon/uiComponents.svg")}
+                  src={require("../../static/icon/uiComponents.svg")}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
                 />
-               UI Components
+                <span> UI Components</span>
               </a>
               <ul className="nav collapse" id="ui-components">
                 <li>
@@ -118,7 +133,7 @@ export default class SideBar extends Component {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="li-outer">
               <a
                 href="#"
                 className="has-arrow collapsed"
@@ -129,12 +144,12 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-forms" data-icon="e" /> */}
                 <svg
-                  src={require("../../../../static/icon/forms.svg")}
+                  src={require("../../static/icon/forms.svg")}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
                 />
-              Form
+                <span> Form</span>
               </a>
               <ul className="nav collapse" id="form">
                 <li>
@@ -148,7 +163,7 @@ export default class SideBar extends Component {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="li-outer">
               <a
                 href="#"
                 className="has-arrow collapsed"
@@ -159,12 +174,12 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-table" data-icon="d" /> */}
                 <svg
-                  src={require("../../../../static/icon/table.svg")}
+                  src={require("../../static/icon/table.svg")}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
                 />
-                Table  
+                <span>Table</span>
               </a>
               <ul className="nav collapse" id="table">
                 <li>

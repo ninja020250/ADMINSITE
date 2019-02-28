@@ -6,6 +6,13 @@
     text-align: center;
     float: left;
     width: calc(100% / 7);
+    .svg path {
+            fill: url(#my-cool-gradient) #447799;
+          }
+    .svg{
+      width: 25px;
+      height: 25px;
+    }
   }
   .card-body {
     padding-bottom: 0;
@@ -13,6 +20,16 @@
     .today-body {
       position: relative;
       height: 322px;
+      // .days-of-week {
+      //   .day-of-week {
+      //     .svg path {
+      //       fill: url(#my-cool-gradient) #447799;
+      //     }
+      //     .svg {
+      //       width: 25px !important;
+      //     }
+      //   }
+      // }
       .today {
         .tempo {
           color: $white-color;

@@ -10,13 +10,13 @@ export default class Weather extends Component {
           </div>
           <div className="card-body mt-1">
             <div className="days-of-week">
-              <DayOFWeek day="MON" color="#4e49bb" icon="icon-weather-01-inactive" />
-              <DayOFWeek day="TUE" color="#d5d5d5" icon="icon-weather-02-active"/>
-              <DayOFWeek day="WED" color="#d5d5d5" icon="icon-weather-01-inactive"/>
-              <DayOFWeek day="THU" color="#d5d5d5" icon="icon-weather-03-active"/>
-              <DayOFWeek day="FRI" color="#d5d5d5" icon="icon-weather-04-active"/>
-              <DayOFWeek day="SAT" color="#d5d5d5" icon="icon-weather-01-inactive"/>
-              <DayOFWeek day="SUN" color="#d5d5d5" icon="icon-weather-01-inactive"/>
+              <DayOFWeek day="MON" color="#4e49bb" icon={require("../../../static/icon/weatherWidget/weather01Inactive.svg")} />
+              <DayOFWeek day="TUE" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather02Active.svg")}/>
+              <DayOFWeek day="WED" color="#d5d5d5"   icon={require("../../../static/icon/weatherWidget/weather01Inactive.svg")}/>
+              <DayOFWeek day="THU" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather03Active.svg")}/>
+              <DayOFWeek day="FRI" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather04Active.svg")}/>
+              <DayOFWeek day="SAT" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}/>
+              <DayOFWeek day="SUN" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}/>
             </div>
             <div className="today-body">
               <div className="today">
@@ -56,7 +56,14 @@ export default class Weather extends Component {
 }
 const DayOFWeek = ({ day, color, icon }) => (
   <div className="day-of-week">
-    <i class={icon} aria-hidden="true" style={{ color: `${color}`, fontSize:"25px" }}  />
+    {/* <i class={icon} aria-hidden="true" style={{ color: `${color}`, fontSize:"25px" }}  /> */}
+    <svg
+                  src={icon}
+                  focusable="false"
+                  className="svg"
+                  alt=""
+                
+                />
     <div style={{ fontWeight: "bold" }}>{`${day}`}</div>
   </div>
 );

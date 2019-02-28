@@ -5,7 +5,7 @@ $ONEDARD: #333652;
     a > i {
       font-size: $font-size-icon-small;
     }
-  
+
     &-text {
       font-weight: 600;
       font-size: 18px;
@@ -24,7 +24,6 @@ $ONEDARD: #333652;
   }
 
   .notification {
-  
     padding: 0px 15px;
     cursor: pointer;
     position: relative;
@@ -65,19 +64,18 @@ $ONEDARD: #333652;
       border: 1px solid #fff;
     }
     > .dropdown-menu {
-      &::before{
+      &::before {
         content: "";
         position: absolute;
         top: -2%;
-        width: 0; 
+        width: 0;
         right: 40px;
-        height: 0; 
+        height: 0;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 15px solid #d24194;
-      
-    }
-    margin: 1rem 0 0;
+      }
+      margin: 1rem 0 0;
       border-radius: 3px;
       transform: translateX(-80%);
       padding: 0;
@@ -88,7 +86,7 @@ $ONEDARD: #333652;
         box-shadow: 0px 8px 25px 0 rgba(16, 17, 43, 0.15);
       }
       .card-header {
-        @include background-gradien-to-right(#324bc3,#ec3f8c);
+        @include background-gradien-to-right(#324bc3, #ec3f8c);
         color: $white-color;
         font-weight: bold;
       }
@@ -119,26 +117,37 @@ $ONEDARD: #333652;
   &-nav-search {
     .search {
       padding: 0px 15px;
-
+      
       &-box {
+        position: relative;
         i {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
           font-size: 23px !important;
           line-height: 24px !important;
         }
         background-image: rgba(255, 255, 255, 255);
         border-radius: 40px;
         padding: 10px;
-
-        &:hover {
-          background-image: linear-gradient(309deg, #ec3f8c, #324bc3);
-          .search-txt {
-            width: 340px;
-            padding: 0 3px;
-          }
-          .search-btn {
-            background: white;
-          }
-        }
+        .search-txt {
+               width: 340px;
+              padding: 0 3px;
+              border: 1px solid #324bc3;
+              border-radius: 20px;
+              color: $black-color;
+           }
+        // &:hover {
+        //   background-image: linear-gradient(309deg, #ec3f8c, #324bc3);
+        //   .search-txt {
+        //     width: 340px;
+        //     padding: 0 3px;
+        //   }
+        //   .search-btn {
+        //     background: white;
+        //   }
+        // }
       }
       &-btn {
         color: $ONEDARD !important;
@@ -194,5 +203,16 @@ $ONEDARD: #333652;
 
 .expand-sidebar {
   //  transition: 0.2s;
-  width: calc(100% - 75px);
+  // position: fixed;
+  // z-index: 99999999999999;
+  // background: white;
+  // width: calc(100% - 25px);
+   width: calc(100% - 60px);
 }
+
+// .crolling-nav {
+//   position: fixed;
+//   z-index: 99999999999999;
+//   background: white;
+//   width: calc(100% - 270px);
+// }

@@ -63,7 +63,7 @@
       padding: 0 8px;
       color: $white-color;
     }
-    p {
+    span {
       float: left;
       font-size: 20px;
       margin: 10px 10px;
@@ -151,9 +151,6 @@
         .svg path{
           fill: url(#my-cool-gradient)  #447799;
         }
-        // i {
-        //   color: #ec3f8c;
-        // }
       }
       &.active > .has-arrow {
         border-radius: 20px;
@@ -166,13 +163,13 @@
       }
     }
 
-    p {
+    span {
       margin: 0;
       line-height: 30px;
       font-size: $font-size-medium;
       font-weight: 600;
       // text-transform: uppercase;
-      margin-left: 45px;
+      // margin-left: 45px;
     }
     .nav-custom-icon {
       width: 21px;
@@ -283,29 +280,40 @@
 // hiden sidebar
 
 .sidebar-hiden {
-  // transition: 0.2s;
-  width: 75px;
+  width: 60px;
+  // // transition: 0.2s;
+  // width: 75px;
   > .sidebar-wrapper {
     .logo-text {
       display: none;
     }
-    width: 75px;
+    width: 60px;
     // >.logo a{
     //   display: none;
     // }
     > .nav {
       li {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         > a.has-arrow:after {
           display: none;
         }
-        p {
+        span {
           display: none;
         }
+        .nav-custom-icon{
+          margin-right: 0;
+        }
         > a {
-          padding: 6px 6px;
+          text-align: center;
+          padding: 0px 0px;
         }
       }
       li.active {
+        background-color: $white-color;
+    
         > .has-arrow {
           background: none;
           box-shadow: none;

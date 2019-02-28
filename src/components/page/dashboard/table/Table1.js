@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RadiusButton from "../button/RadiusButton";
+import RadiusButton from "../RadiusButton";
 const sampleData = [
   {
     inVoice: "INV-0010001",

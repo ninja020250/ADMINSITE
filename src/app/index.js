@@ -2,4 +2,13 @@ import React from "react";
 import ReactDom from "react-dom";
 import App from "../containers/App";
 import "../lib";
-ReactDom.render(<App />, document.getElementById("root"));
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+ReactDom.render(
+  <div>
+    <Router>
+      <Route path="/" component={App} />
+    </Router>
+  </div>,
+  document.getElementById("root")
+);
