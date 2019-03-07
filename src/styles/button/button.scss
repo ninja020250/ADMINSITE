@@ -14,3 +14,101 @@
     margin-right: 5px;
   }
 }
+.linear-button-container {
+  max-width: 141px;
+}
+.linear-button {
+  position: relative;
+  @include background-gradien-to-right(#324bc3, #ec3f8c);
+  padding: 8px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  color: $white-color;
+  cursor: pointer;
+  z-index: 1;
+  &::before {
+    width: 80%;
+    height: 40px;
+    opacity: 0.6;
+    content: "";
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(to left, #ec3f8c, #324bc3);
+    -webkit-filter: blur(11px);
+    -moz-filter: blur(11px);
+    -o-filter: blur(11px);
+    -ms-filter: blur(11px);
+    filter: blur(11px);
+    bottom: -7%;
+    bottom: unset;
+  }
+}
+.upload-btn-container {
+  position: relative;
+  label {
+    display: inline-block;
+  }
+  button {
+    border: none;
+    background-color: rgba(255, 255, 255, 255);
+    display: inline-block;
+    font-size: 14px;
+    color: #61626d;
+    
+  }
+  input[type="file"] {
+    max-width: 141px;
+    height: auto;
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+}
+.upload-btn-container-advance {
+  label {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+  }
+  button {
+    background: rgba(255, 255, 255, 255);
+    width: 100%;
+    font-size: 14px;
+    color: #61626d;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    min-height: 40px;
+    padding: 8px 25px;
+    text-align: left;
+  }
+  input[type="file"] {
+    min-height: 40px;
+    max-width: 141px;
+    height: auto;
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+}
+.select-color-btn-container{
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 255);
+  width: 100%;
+  input[type="color"]{
+    height: 35px;
+    padding: 10px 25px;
+    border: solid 1px #e1e1e1;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 255);
+  }
+}

@@ -1,9 +1,36 @@
-.match_parent{
-    width: 100%
+.match_parent {
+  width: 100%;
 }
-.text-input{
-    label{
-        font-family: Lato;
-        font-weight: bold;
-    }
+.form-group {
+  label {
+    font-family: Lato;
+    font-weight: bold;
+  }
+}
+.form-icon {
+  .svg path {
+    fill: url(#my-cool-gradient) #447799;
+  }
+}
+.form-icon-left {
+  input {
+    padding: 0.375rem 2rem;
+  }
+  .svg {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateX(150%);
+  }
+}
+.form-icon-right {
+  input {
+    padding: 0.375rem 0.75rem;
+  }
+  .svg {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(-150%);
+  }
 }

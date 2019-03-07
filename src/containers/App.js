@@ -21,6 +21,7 @@ class App extends Component {
       currentInnerPage: currentInnerPage
     })
   }
+  
   componentDidMount() {
     $("svg.svg").each(icon);
     // $("svg.white-svg").each(icon);
@@ -52,13 +53,12 @@ class App extends Component {
       //  $(".main-panel").addClass("expand-sidebar");
       }
     );
-    var prevScrollpos = window.pageYOffset;
    
   }
   render() {
     return (
       <div className="wrapper">
-        <SideBar switchPage={this.handleSwitchPage}/>
+        <SideBar switchPage={this.handleSwitchPage} history={this.props.history}/>
         <MainPanel />
       </div>
     );

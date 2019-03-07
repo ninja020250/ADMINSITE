@@ -6,7 +6,7 @@ export default class TextInput extends Component {
       <div className="text-input match_parent">
         <div className="card">
           <div className="card-header">
-            <h4 className="card-title">Text Input</h4>
+            <h4 className="card-title">TEXT INPUT</h4>
           </div>
           <div className="card-body mt-1">
             <div className="row">

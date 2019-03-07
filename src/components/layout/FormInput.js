@@ -1,11 +1,44 @@
 import React, { Component } from "react";
-import {TextInput} from '../page/formInput'
+import $ from 'jquery';
+import icon from '../../lib/handleIconSVG.js'
+import {
+  TextInput,
+  TextAreas,
+  InputWithIcon,
+  InputSelect,
+  OtherInput,
+  InputStyle
+} from "../page/formInput";
 export default class FormInput extends Component {
+  constructor(props) {
+    super(props);
+    
+  }
+  componentDidMount(){
+    $("svg.svg").each(icon);
+  }
   render() {
-    return <div className="main-wrapper">
-    <div className="row">
-    <TextInput/>
-    </div>
-    </div>;
+    return (
+      <div className="main-wrapper">
+        <div className="row mt-3">
+          <TextInput />
+        </div>
+        <div className="row mt-5">
+          <TextAreas />
+        </div>
+        <div className="row mt-5">
+          <InputSelect />
+        </div>
+        <div className="row mt-5">
+          <InputWithIcon />
+        </div>
+        <div className="row mt-5">
+          <InputStyle />
+        </div>
+        <div className="row mt-5">
+          <OtherInput />
+        </div>
+      </div>
+    );
   }
 }

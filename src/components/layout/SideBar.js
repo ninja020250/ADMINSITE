@@ -1,7 +1,22 @@
 import React, { Component } from "react";
 import $ from "jquery";
-const dataImage = require("../../static/img/sidebar-5.jpg");
+// import image
+import { sidebar_background_image } from "../../common/image";
+// import icon
+import {
+  sidebar_logo,
+  dashboard_icon_svg,
+  form_icon_svg,
+  layout_icon_svg,
+  table_icon_svg,
+  uiComponent_icon_svg
+} from "../../common/icon";
+
 export default class SideBar extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
   componentDidMount() {
     $(".nav .li-outer").click(e => {
       console.log(e);
@@ -12,39 +27,49 @@ export default class SideBar extends Component {
       }
     });
   }
+  navigateTo = to => {
+    this.props.history.push(to);
+  };
   handleSwitchPage = (page, innerPage) => {
     // do something
   };
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     return (
       <div
         className="sidebar "
         id="sidebar"
         data-color="pink"
-        data-image={dataImage}
+        data-image={sidebar_background_image}
       >
         <div className="sidebar-wrapper">
           <div className="logo">
             <div href="#" className="simple-text">
-              {/* <i className="icon-logo-1-cuong" aria-hidden="true" /> */}
-              <svg
-                src={require("../../static/icon/logo.svg")}
+              <img
+                src={sidebar_logo}
                 focusable="false"
                 className="svg nav-custom-icon "
                 alt=""
               />
-              <a href="#" className="logo-text">
+              <a
+                href="#"
+                className="logo-text"
+                onClick={() => {
+                  this.navigateTo("/");
+                }}
+              >
                 Dashboard
               </a>
             </div>
           </div>
           <ul className="nav flex-column">
-            <li className="li-outer">
+            <li
+              className="li-outer"
+              onClick={() => {
+                this.navigateTo("/");
+              }}
+            >
               <a
-              
                 href="#"
                 className="has-arrow collapsed"
                 data-toggle="collapse"
@@ -52,9 +77,8 @@ export default class SideBar extends Component {
                 aria-expanded="false"
                 aria-controls="dashboard"
               >
-                {/* <i class="icon-dashboard"  data-icon="a"></i> */}
                 <svg
-                  src={require("../../static/icon/dashboardSelected.svg")}
+                  src={dashboard_icon_svg}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
@@ -84,7 +108,7 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-layout" data-icon="b" /> */}
                 <svg
-                  src={require("../../static/icon/layout.svg")}
+                  src={layout_icon_svg}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
@@ -114,7 +138,7 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-ui-components" data-icon="c" /> */}
                 <svg
-                  src={require("../../static/icon/uiComponents.svg")}
+                  src={uiComponent_icon_svg}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
@@ -133,7 +157,12 @@ export default class SideBar extends Component {
                 </li>
               </ul>
             </li>
-            <li className="li-outer">
+            <li
+              className="li-outer"
+              onClick={() => {
+                this.navigateTo("/form-input");
+              }}
+            >
               <a
                 href="#"
                 className="has-arrow collapsed"
@@ -144,7 +173,7 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-forms" data-icon="e" /> */}
                 <svg
-                  src={require("../../static/icon/forms.svg")}
+                  src={form_icon_svg}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
@@ -174,7 +203,7 @@ export default class SideBar extends Component {
               >
                 {/* <i class="icon-table" data-icon="d" /> */}
                 <svg
-                  src={require("../../static/icon/table.svg")}
+                  src={table_icon_svg}
                   focusable="false"
                   className="svg nav-custom-icon"
                   alt=""
@@ -195,9 +224,6 @@ export default class SideBar extends Component {
             </li>
           </ul>
         </div>
-        {/* 
-Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-Tip 2: you can also add an image using data-image tag */}
       </div>
     );
   }

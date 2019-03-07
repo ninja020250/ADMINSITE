@@ -22,7 +22,6 @@ export default class OverviewCard extends Component {
 
   render() {
     return (
-     <div className="col-3">
         <div className={`overview-card ${this.props.background}`}>
         <div className="media">
           <div className="overview-card-title media-body ">
@@ -37,7 +36,7 @@ export default class OverviewCard extends Component {
           <canvas id={`${this.props.chartId}`} className="chart" />
         </div>
       </div>
-     </div>
+    
     );
   }
 }

@@ -1,15 +1,17 @@
 
 .overviews-header {
   padding-left: 15px;
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
 }
 .overview-card {
   padding: 12px 19px;
-  width: 377px;
+  max-width: 377px;
+  width: 100%;
   height: 200px;
   border-radius: 3px;
   color: $white-color;
   position: relative;
+  margin-top: 25px;
   .title {
     text-transform: uppercase;
     font-family: Lato;

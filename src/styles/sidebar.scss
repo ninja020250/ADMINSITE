@@ -47,7 +47,8 @@
     padding-bottom: 100px;
   }
   .logo {
-    padding: $navbar-padding-a;
+    // padding: $navbar-padding-a;
+    padding: 20px 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     .svg {
       width: 30px;
@@ -56,7 +57,7 @@
       // position: relative;
       // top: 2px;
     }
-    .svg path{
+    .svg path {
       fill: url(#white-gradient) #ffff;
     }
     &-text {
@@ -74,8 +75,9 @@
 
     .simple-text {
       text-transform: uppercase;
-      padding: $padding-small-vertical $padding-zero;
-      display: block;
+      display: flex;
+      padding:  0 6px ;
+      justify-content: flex-start;
       font-size: $font-size-large;
       color: $white-color;
       text-align: center;
@@ -148,8 +150,8 @@
         transform: rotate(-45deg) translate(0, -50%);
       }
       &.active {
-        .svg path{
-          fill: url(#my-cool-gradient)  #447799;
+        .svg path {
+          fill: url(#my-cool-gradient) #447799;
         }
       }
       &.active > .has-arrow {
@@ -175,7 +177,7 @@
       width: 21px;
       margin-right: 10px;
     }
-    .svg path{
+    .svg path {
       fill: url(#white-gradient) #ffff;
     }
     // i {
@@ -214,7 +216,7 @@
   }
 
   &:after {
-    @include icon-gradient($black-color-top, $black-color-bottom);
+   @include icon-gradient($black-color-top, $black-color-bottom);
     z-index: 3;
     opacity: 1;
   }
@@ -223,6 +225,7 @@
     opacity: 0.77;
   }
   &[data-color="blue"]:after {
+
     @include icon-gradient($new-dark-blue, $blue-color-bottom);
   }
   &[data-color="azure"]:after {
@@ -281,16 +284,16 @@
 
 .sidebar-hiden {
   width: 60px;
-  // // transition: 0.2s;
-  // width: 75px;
   > .sidebar-wrapper {
     .logo-text {
       display: none;
     }
+    .logo{
+      align-items: center;
+    display: flex;
+    justify-content: center;
+    }
     width: 60px;
-    // >.logo a{
-    //   display: none;
-    // }
     > .nav {
       li {
         height: 60px;
@@ -303,7 +306,7 @@
         span {
           display: none;
         }
-        .nav-custom-icon{
+        .nav-custom-icon {
           margin-right: 0;
         }
         > a {
@@ -313,7 +316,7 @@
       }
       li.active {
         background-color: $white-color;
-    
+
         > .has-arrow {
           background: none;
           box-shadow: none;

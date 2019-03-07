@@ -79,6 +79,10 @@ body {
   fill: url(#my-cool-gradient)  #447799;
 
 }
+.svg {
+  width: 16px;
+  height: 16px;
+}
 .white-svg path{
   fill: url(#white-gradient) #ffff;
   &:hover{
@@ -88,4 +92,10 @@ body {
 .custom-icon{
   margin: 0 5px;
   width: 14px;
+}
+.round{
+  border-radius: 20px;  
+}
+.square{
+  border-radius:0px;  
 }

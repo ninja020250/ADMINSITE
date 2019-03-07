@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
@@ -10,6 +9,7 @@ export const renderComponent = (route, match, history) => {
 
     render() {
       return (
+       
         <route.component {...route.props} match={match} history={history} routes={route.routes}  />
       );
     }
@@ -24,6 +24,7 @@ export const renderRoutes = (routes) => {
     ? <Switch>
         {
           routes.map((route, i) => (
+         
             <Route
               key={i}
               path={route.path}

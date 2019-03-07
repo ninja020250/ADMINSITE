@@ -34,14 +34,16 @@ export default class OverviewCards extends Component {
   getCards = () => {
     return cardData.map((data, index) => {
       return (
-        <OverviewCard
+       <div className="	col-sm-12 col-md-12 col-lg-6 col-xl-3"   key={index} >
+          <OverviewCard
           background={data.background}
           icon={data.icon}
           title={data.title}
           parameter={data.parameter}
-          key={index}
+        
           chartId={data.chartId}
         />
+       </div>
       );
     });
   };
