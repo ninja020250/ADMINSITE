@@ -9,7 +9,7 @@ import {
 export default class PayoutAVG extends Component {
   render() {
     return (
-      <div className="payoutAVG">
+      <div className="payoutAVG mt-5">
         <div className="card">
           <div className="card-header">
             <h4 className="card-title">PAYOUT AVG</h4>

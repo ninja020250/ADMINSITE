@@ -1,7 +1,8 @@
 @import "./utility/variable";
 @import "./utility/mixin";
-@import "./sidebar.scss";
+// @import "./sidebar.scss";
 @import "./navbar.scss";
+@import "./newsidebar.scss";
 @import "./overviewCard.scss";
 @import "./activities.scss";
 @import "./table/index.scss";
@@ -31,11 +32,11 @@ body {
       color: $black-color;
     }
   }
-  .wrapper {
-    top: 0;
-    min-height: 100vh;
-    position: relative;
-  }
+  // .wrapper {
+  //   top: 0;
+  //   min-height: 100vh;
+  //   position: relative;
+  // }
 }
 .main-wrapper {
   padding: 0 30px;
@@ -80,8 +81,8 @@ body {
 
 }
 .svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 .white-svg path{
   fill: url(#white-gradient) #ffff;

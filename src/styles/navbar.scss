@@ -1,16 +1,7 @@
 $DEEP-ORANGE: #e84118;
 $ONEDARD: #333652;
 .navbar {
-  .navbar-logo {
-    a > i {
-      font-size: $font-size-icon-small;
-    }
-
-    &-text {
-      font-weight: 600;
-      font-size: 18px;
-    }
-  }
+  
   .common-count {
     background-image: linear-gradient(309deg, #ec3f8c, #324bc3);
     color: #ffffff;
@@ -29,7 +20,7 @@ $ONEDARD: #333652;
     position: relative;
     > i {
       color: #9fb6c3;
-      font-size: 23px !important;
+      font-size: 25px !important;
       line-height: 24px !important;
       &:hover {
         color: #6f7e87;
@@ -114,13 +105,18 @@ $ONEDARD: #333652;
   }
 
   // search box
-  &-nav-search {
+  #navbarSupportedContent {
+    .right-items{
+    display: flex;
+    align-items: center;
+   }
     .search {
       padding: 0px 15px;
       
       &-box {
         position: relative;
         i {
+          font-size: 25px;
           position: absolute;
           right: 20px;
           top: 50%;
@@ -183,8 +179,8 @@ $ONEDARD: #333652;
       padding: 0px 15px;
       &-image {
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
         border-radius: 50%;
         border-width: 2px;
         border-color: #ffff;
@@ -201,14 +197,14 @@ $ONEDARD: #333652;
 
 // hiden sidebar
 
-.expand-sidebar {
-  //  transition: 0.2s;
-  // position: fixed;
-  // z-index: 99999999999999;
-  // background: white;
-  // width: calc(100% - 25px);
-   width: calc(100% - 60px);
-}
+// .expand-sidebar {
+//   //  transition: 0.2s;
+//   // position: fixed;
+//   // z-index: 99999999999999;
+//   // background: white;
+//   // width: calc(100% - 25px);
+//    width: calc(100% - 60px);
+// }
 
 // .crolling-nav {
 //   position: fixed;

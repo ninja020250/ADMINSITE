@@ -108,7 +108,7 @@ export default class Table1 extends Component {
   };
   render() {
     return (
-      <div id="recent-sale" className="col-12 col-md-12">
+      <div id="recent-sale" >
         <div className="card">
           <div className="card-header">
             <h4 className="card-title">Recent Transaction</h4>

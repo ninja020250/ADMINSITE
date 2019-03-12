@@ -29,7 +29,6 @@ export default class MainPanel extends Component {
   render() {
     return (
       <div className="main-panel ">
-        <Navbar />
         {renderRoutes(routes)}
       </div>
     );

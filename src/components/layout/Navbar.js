@@ -28,7 +28,7 @@ export default class Navbar extends Component {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto ">
+          <ul className="navbar-nav mr-auto">
             <li className="nav-item navbar-logo" id="sidebartoggler">
               <a href="#" className="sidebartoggler nav-link">
                 <i className="fa fa-bars" aria-hidden="true" />

@@ -28,7 +28,7 @@ export default class Dashboard extends Component {
   }
   render() {
     return (
-      <div className="main-wrapper">
+      <div className="container-fluid">
         <OverviewCards />
         <div className="row mt-5">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-8">

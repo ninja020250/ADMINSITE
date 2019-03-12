@@ -225,7 +225,6 @@
     opacity: 0.77;
   }
   &[data-color="blue"]:after {
-
     @include icon-gradient($new-dark-blue, $blue-color-bottom);
   }
   &[data-color="azure"]:after {
