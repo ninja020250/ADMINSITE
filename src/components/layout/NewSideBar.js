@@ -18,7 +18,7 @@ export default class NewSideBar extends Component {
             <img
               src={sidebar_logo}
               focusable="false"
-              className="svg nav-custom-icon mr-2"
+              className="svg nav-custom-icon mr-3"
               alt=""
             />
             ADMIN SITE

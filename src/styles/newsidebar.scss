@@ -51,6 +51,7 @@ span {
   display: inline-block;
 }
 #sidebarCollapse{
+  cursor: pointer;
   font-size: 25px;
   i{
 
@@ -99,6 +100,7 @@ span {
   }
 }
 
+
 #sidebar ul li a strong {
   display: unset;
 }
@@ -106,6 +108,7 @@ span {
   display: none;
 }
 #sidebar.active ul li a span {
+
   display: none;
 }
 
@@ -234,6 +237,7 @@ a[aria-expanded="true"] {
   }
 }
 #sidebar.active ul li > a[aria-expanded="true"] {
+  border-radius: unset;
   color: #222222;
   .svg path {
     fill: url(#my-cool-gradient) #447799;
