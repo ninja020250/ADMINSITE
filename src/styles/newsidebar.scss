@@ -65,11 +65,16 @@ span {
 ----------------------------------------------------- */
 
 .wrapper {
+  max-height: 100vh;
   display: flex;
   align-items: stretch;
 }
 
 #sidebar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  overflow-y: auto;
   min-width: 250px;
   max-width: 250px;
   background-image: linear-gradient(to top, #ec3f8c, #324bc3);
@@ -305,6 +310,7 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
+  overflow-y: auto;
   width: 100%;
   padding-top: 0;
   padding-bottom: 20px;
