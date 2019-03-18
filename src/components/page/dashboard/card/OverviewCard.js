@@ -29,7 +29,12 @@ export default class OverviewCard extends Component {
             <div className="number">{this.props.parameter}</div>
           </div>
           <div className="overview-card-logo align-self-center mr-3">
-            <i className={`${this.props.icon}`} aria-hidden="true" />
+          <svg
+                  src={this.props.icon}
+                  focusable="false"
+                  className="svg pure-svg"
+                  alt=""
+                />
           </div>
         </div>
         <div className="area-chart">

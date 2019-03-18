@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { weather_01_inactive_svg } from "../../../common/icon";
 export default class Weather extends Component {
   render() {
     return (
@@ -10,34 +10,57 @@ export default class Weather extends Component {
           </div>
           <div className="card-body mt-1">
             <div className="days-of-week">
-              <DayOFWeek day="MON" color="#4e49bb" icon={require("../../../static/icon/weatherWidget/weather01Inactive.svg")} />
-              <DayOFWeek day="TUE" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather02Active.svg")}/>
-              <DayOFWeek day="WED" color="#d5d5d5"   icon={require("../../../static/icon/weatherWidget/weather01Inactive.svg")}/>
-              <DayOFWeek day="THU" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather03Active.svg")}/>
-              <DayOFWeek day="FRI" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather04Active.svg")}/>
-              <DayOFWeek day="SAT" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}/>
-              <DayOFWeek day="SUN" color="#d5d5d5"  icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}/>
+              <DayOFWeek
+                day="MON"
+                color="#4e49bb"
+                icon={require("../../../static/icon/weatherWidget/weather01Inactive.svg")}
+              />
+              <DayOFWeek
+                day="TUE"
+                color="#d5d5d5"
+                icon={require("../../../static/icon/weatherWidget/weather02Active.svg")}
+              />
+              <DayOFWeek
+                day="WED"
+                color="#d5d5d5"
+                icon={require("../../../static/icon/weatherWidget/weather01Inactive.svg")}
+              />
+              <DayOFWeek
+                day="THU"
+                color="#d5d5d5"
+                icon={require("../../../static/icon/weatherWidget/weather03Active.svg")}
+              />
+              <DayOFWeek
+                day="FRI"
+                color="#d5d5d5"
+                icon={require("../../../static/icon/weatherWidget/weather04Active.svg")}
+              />
+              <DayOFWeek
+                day="SAT"
+                color="#d5d5d5"
+                icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}
+              />
+              <DayOFWeek
+                day="SUN"
+                color="#d5d5d5"
+                icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}
+              />
             </div>
             <div className="today-body">
               <div className="today">
-                <i
-                  className="icon-weather-01-inactive"
-                 
+                <svg
+                  src={weather_01_inactive_svg}
+                  focusable="false"
+                  className="svg pure-svg"
+                  alt=""
                   style={{ color: "white", paddingRight: "40px" }}
                 />
                 <div className="tempo">
                   <div>
-                    <div
-                      className="number"
-                      style={{
-                        fontSize: "90px",
-                        marginBottom: "-34px",
-                        fontWeight: "bold"
-                      }}
-                    >
+                    <div className="number">
                       29
+                      <span>0</span>
                     </div>
-                    <span>0</span>
                   </div>
                   <div className="status">Cloudy</div>
                 </div>
@@ -57,13 +80,7 @@ export default class Weather extends Component {
 const DayOFWeek = ({ day, color, icon }) => (
   <div className="day-of-week">
     {/* <i class={icon} aria-hidden="true" style={{ color: `${color}`, fontSize:"25px" }}  /> */}
-    <svg
-                  src={icon}
-                  focusable="false"
-                  className="svg"
-                  alt=""
-                
-                />
+    <svg src={icon} focusable="false" className="svg" alt="" />
     <div style={{ fontWeight: "bold" }}>{`${day}`}</div>
   </div>
 );

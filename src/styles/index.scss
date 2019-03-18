@@ -79,10 +79,10 @@ body {
 //   --color-stop-2: #77e190;
 //   --color-stop-3: #ffff1c;
 // }
-.svg path{
-  fill: url(#my-cool-gradient)  #447799;
+// .svg path{
+//   fill: url(#my-cool-gradient)  #447799;
 
-}
+// }
 .svg {
   width: 20px;
   height: 20px;
@@ -92,6 +92,9 @@ body {
   &:hover{
     fill: url(#my-cool-gradient)  #447799;
   }
+}
+.pure-svg path{
+  fill: url(#white-gradient) #ffff;
 }
 .custom-icon{
   margin: 0 5px;

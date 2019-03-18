@@ -15,6 +15,9 @@ const uiComponent_icon_svg = require("../static/icon/uiComponents.svg");
 const form_icon_svg = require("../static/icon/forms.svg");
 const table_icon_svg = require("../static/icon/table.svg");
 
+// wheather icon
+const weather_01_inactive_svg = require("../static/icon/weatherWidget/weather_01_inactive.svg");
+
 export {
   search,
   phone,
@@ -28,5 +31,6 @@ export {
   layout_icon_svg,
   uiComponent_icon_svg,
   form_icon_svg,
-  table_icon_svg
+  table_icon_svg,
+  weather_01_inactive_svg
 };
