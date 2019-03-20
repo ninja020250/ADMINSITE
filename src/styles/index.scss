@@ -11,6 +11,10 @@
 @import "./payoutAVG.scss";
 @import "./weather.scss";
 @import "./fromInput.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+  font-family: Lato;
+}
 // ::-webkit-scrollbar { 
 //   display: none; 
 // }
@@ -53,9 +57,11 @@ body {
 // standard card
 .card {
   border: none;
+  background-color: rgba(255,255,255,0);
   .card-header {
+    padding: .75rem 0;
     border-bottom: none;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0);
     .card-title {
       font-size: $font-size-medium;
       font-weight: bold;
@@ -70,6 +76,7 @@ body {
     }
   }
   .card-body {
+    background-color: #fff;
     border-radius: 3px;
     box-shadow: 0px 8px 25px 0 rgba(16, 17, 43, 0.08);
   }

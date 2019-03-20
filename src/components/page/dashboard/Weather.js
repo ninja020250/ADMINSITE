@@ -9,7 +9,7 @@ export default class Weather extends Component {
             <h4 className="card-title">Weather</h4>
           </div>
           <div className="card-body mt-1">
-            <div className="days-of-week">
+            <div className="days-of-week d-flex">
               <DayOFWeek
                 day="MON"
                 color="#4e49bb"
@@ -46,23 +46,23 @@ export default class Weather extends Component {
                 icon={require("../../../static/icon/weatherWidget/weather01Active.svg")}
               />
             </div>
-            <div className="today-body">
-              <div className="today">
+            <div className="today-body d-flex justify-content-center align-items-center">
+              <div className="media">
                 <svg
                   src={weather_01_inactive_svg}
                   focusable="false"
-                  className="svg pure-svg"
+                  className="svg pure-svg align-self-center mr-2"
                   alt=""
                   style={{ color: "white", paddingRight: "40px" }}
                 />
-                <div className="tempo">
-                  <div>
+                <div className="media-body">
+                  <div className="mt-0">
                     <div className="number">
                       29
                       <span>0</span>
                     </div>
                   </div>
-                  <div className="status">Cloudy</div>
+                  <div className="status mt-0">Cloudy</div>
                 </div>
               </div>
             </div>
