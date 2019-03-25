@@ -39,7 +39,7 @@ export default class OverviewCards extends Component {
   getCards = () => {
     return cardData.map((data, index) => {
       return (
-       <div className="	col-sm-12 col-md-12 col-lg-6 col-xl-3"   key={index} >
+       <div className="	col-sm-12 col-md-6 col-lg-6 col-xl-3"   key={index} >
           <OverviewCard
           background={data.background}
           icon={data.icon}

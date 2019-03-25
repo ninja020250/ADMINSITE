@@ -13,7 +13,7 @@ var barChartData = {
         "#f49c11",
         "#f49c11"
       ],
-  
+
       // borderColor: [
       //   "rgba(255,99,132,1)",
       //   "rgba(54, 162, 235, 1)",
@@ -98,6 +98,8 @@ var lineChartOption = {
       }
     }
   },
+  legend: false,
+
   scales: {
     yAxes: [
       {
@@ -132,9 +134,9 @@ const lineChartDoubleData = {
       pointBorderColor: "rgba(255,255,255,0)",
       pointHoverBackgroundColor: "rgba(255,255,255,1)",
       label: "product",
-      data: [5, 3, 7, 4, 5, 3, 5],
+      data: [2, 4, 8, 4, 1, 2, 4],
       backgroundColor: ["rgba(255,255,255,0)"],
-      borderColor: ["#00ff7e"],
+      borderColor: ["#00bd12"],
       borderWidth: 5
     },
     {
@@ -142,15 +144,36 @@ const lineChartDoubleData = {
       pointBorderColor: "rgba(255,255,255,0)",
       pointHoverBackgroundColor: "#00d8ff",
       label: "Stock",
-      data: [1, 5, 2, 3, 5, 4, 2],
+      data: [0, 5, 2, 3, 6, 2, 1],
       backgroundColor: ["rgba(255,255,255,0)"],
-      borderColor: ["#00d8ff"],
+      borderColor: ["#0084ea"],
       borderWidth: 5
     }
   ]
 };
 
 const lineChartDoubleOption = {
+  legend: false,
+  legendCallback: function(chart) {
+    var text = [];
+    text.push('<ul class="' + chart.id + '-legend" style="list-style-type: none;">');
+    for (var i = 0; i < chart.data.datasets.length; i++) {
+      text.push(
+        // '<li><span style="background-image:  linear-gradient(144deg,' +
+        //   chart.data.datasets[i].borderColor[1] +','+chart.data.datasets[i].borderColor[0]
+        //   '" class="badge">'
+        `<li style=" margin: 10px;    display: inline;"><span style="background: 
+            ${chart.data.datasets[i].borderColor[0]}; width: 8px; height: 12px " class="badge"> </span>
+            <span>${chart.data.datasets[i].label}</span></li>`
+      );
+      // if (chart.data.datasets[i].label) {
+      //   text.push(chart.data.datasets[i].label);
+      // }
+      // text.push("</span></li>");
+    }
+    text.push("</ul>");
+    return text.join("");
+  },
   scales: {
     yAxes: [
       {

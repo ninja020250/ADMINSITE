@@ -18,6 +18,7 @@ export default class PayoutAVG extends Component {
             </div>
           </div>
           <div className="card-body mt-1">
+            <div id="chartjs-legend" class="noselect" />
             <ChartPayoutAVG chartId="linechart-payoutavg" />
           </div>
         </div>
@@ -42,6 +43,12 @@ class ChartPayoutAVG extends Component {
     var ctx = document.getElementById("a");
 
     var myChart = this.getLineChart(ctx);
+    $("#chartjs-legend").html(myChart.generateLegend());
+    // $("#chartjs-legend").on('click', "li", function() {
+    //   myChart.data.datasets[0].data[$(this).index()] += 50;
+    //   myChart.update();
+    //   console.log('legend: ' + data.datasets[0].data[$(this).index()]);
+    // });
   }
 
   render() {

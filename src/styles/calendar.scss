@@ -220,3 +220,61 @@
     }
   }
 }
+
+//custom calendar react-calendar
+
+.react-calendar {
+  width: 100%;
+  padding: 25px 20px;
+  border: unset;
+  button:focus{
+    outline: unset !important;
+  }
+  .react-calendar__navigation {
+    background-image: linear-gradient(to left, #ec3f8c, #324bc3);
+    margin: 0 10%;
+    border-radius: 20px;
+    > button {
+      background: rgba(255, 255, 255, 0);
+      color: $white-color;
+      z-index:3;
+      &:hover {
+        background: unset;
+      }
+    }
+    z-index: 1;
+    &::before {
+      width: 60%;
+      height: 55px;
+      @include blurShadow(linear-gradient(to left, #ec3f8c, #324bc3));
+      bottom: unset;
+      z-index: 2;
+    }
+  }
+  .react-calendar__month-view {
+    padding: 25px 0;
+  }
+  .react-calendar__month-view__days{
+    .react-calendar__tile--active{
+      abbr{
+      margin: auto;
+        justify-content: center;
+    align-items: center;
+        display: flex;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2px solid #4e49bb;
+        padding: 5px;
+        color: #4e49bb;
+      }
+    }
+  }
+  .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: unset;
+}
+.react-calendar__tile--active {
+     background: $white-color; 
+    color: white;
+}
+}

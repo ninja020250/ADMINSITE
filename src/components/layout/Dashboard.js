@@ -11,6 +11,7 @@ import {
   Table1,
   Weather
 } from "../page/dashboard";
+import CustomCalendar from '../../components/page/dashboard/CustomCalendar';
   // import OverviewCards from '../page/main/card/OverviewCards';
   // import Activities from '../page/main/activities/Activities';
   // import Table1 from '../page/main/table/Table1';
@@ -63,6 +64,7 @@ export default class Dashboard extends Component {
             </div>
           </div>
         </div>
+   
       </div>
     );
   }
