@@ -7,10 +7,10 @@
 
 .activities-card {
   &-title {
-      padding-bottom: 25px;
-      font-size:$font-size-medium;
-      text-transform: uppercase;
-      font-weight: bold;
+    padding-bottom: 25px;
+    font-size: $font-size-medium;
+    text-transform: uppercase;
+    font-weight: bold;
   }
   > .card {
     border: none;
@@ -23,7 +23,7 @@
       bottom: 0;
       left: 60px;
       z-index: 2;
-      box-shadow: 0px -35px 20px 35px   rgba(255, 255, 255, 1);
+      box-shadow: 0px -35px 20px 35px rgba(255, 255, 255, 1);
       background: linear-gradient(
         to top,
         rgba(255, 255, 255, 1),

@@ -15,8 +15,24 @@ const uiComponent_icon_svg = require("../static/icon/uiComponents.svg");
 const form_icon_svg = require("../static/icon/forms.svg");
 const table_icon_svg = require("../static/icon/table.svg");
 
-// wheather icon
-const weather_01_inactive_svg = require("../static/icon/weatherWidget/weather_01_inactive.svg");
+
+
+// calendar
+const iconMeeting = require("../static/icon/eventMeeting.svg");
+const iconParty = require("../static/icon/event_party.svg");
+const iconTraining = require("../static/icon/event_training.svg");
+const iconHealthCheck = require("../static/icon/event_health_check.svg") ;
+
+// table 
+const iconFood = require("../static/icon/food.svg");
+const iconElectronics = require("../static/icon/electronics.svg");
+const iconCosmetology  = require("../static/icon/cosmetology.svg");
+
+//weather
+const weather01  = require("../static/icon/weatherWidget/weather01Inactive.svg");
+const weather02  =  require("../static/icon/weatherWidget/weather02Active.svg");
+const weather03  =  require("../static/icon/weatherWidget/weather03Active.svg");
+const weather04  = require("../static/icon/weatherWidget/weather04Active.svg");
 
 export {
   search,
@@ -32,5 +48,15 @@ export {
   uiComponent_icon_svg,
   form_icon_svg,
   table_icon_svg,
-  weather_01_inactive_svg
+  iconMeeting,
+  iconParty,
+  iconTraining,
+  iconHealthCheck,
+  iconFood,
+  iconElectronics,
+  iconCosmetology,
+  weather01,
+  weather02,
+  weather03,
+  weather04
 };

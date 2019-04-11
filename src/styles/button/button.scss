@@ -19,7 +19,7 @@
 }
 .linear-button {
   position: relative;
-  @include background-gradien-to-right(#324bc3, #ec3f8c);
+  @include background-gradien-to-right($blue-default, $pink-default);
   padding: 8px 25px;
   font-weight: bold;
   border: none;
@@ -38,7 +38,8 @@
     right: 0;
     position: absolute;
     z-index: -1;
-    background-image: linear-gradient(to left, #ec3f8c, #324bc3);
+    @include background-gradien-to-right( $blue-default,  $pink-default);
+    // background-image: linear-gradient(to left,,);
     -webkit-filter: blur(11px);
     -moz-filter: blur(11px);
     -o-filter: blur(11px);

@@ -20,7 +20,8 @@
         left: 13px;
       }
       padding: 7px 80px;
-      background-image: linear-gradient(to left, #ec3f8c, #324bc3);
+      @include background-gradien-to-right($blue-default, $pink-default);
+
       width: 300px;
       height: 40px;
       margin-left: auto;
@@ -34,7 +35,9 @@
       &::before {
         width: 250px;
         height: 40px;
-        @include blurShadow(linear-gradient(to left, #ec3f8c, #324bc3));
+        @include blurShadow(
+          linear-gradient(to left, $pink-default, $blue-default)
+        );
         bottom: unset;
       }
     }
@@ -190,7 +193,7 @@
       }
       //   margin-top: 30px;
       //   margin-bottom: 30px;
-      background-image: linear-gradient(to left, #ec3f8c, #324bc3);
+      background-image: linear-gradient(to left, $pink-default, $blue-default);
       .task-icon {
         background-color: #ffffff;
         background-image: unset;
@@ -227,17 +230,18 @@
   width: 100%;
   padding: 25px 20px;
   border: unset;
-  button:focus{
+  button:focus {
     outline: unset !important;
   }
   .react-calendar__navigation {
-    background-image: linear-gradient(to left, #ec3f8c, #324bc3);
+    @include background-gradien-to-right($blue-default, $pink-default);
+   
     margin: 0 10%;
     border-radius: 20px;
     > button {
       background: rgba(255, 255, 255, 0);
       color: $white-color;
-      z-index:3;
+      z-index: 3;
       &:hover {
         background: unset;
       }
@@ -246,7 +250,7 @@
     &::before {
       width: 60%;
       height: 55px;
-      @include blurShadow(linear-gradient(to left, #ec3f8c, #324bc3));
+      @include blurShadow(linear-gradient(to left, $pink-default, $blue-default));
       bottom: unset;
       z-index: 2;
     }
@@ -254,12 +258,12 @@
   .react-calendar__month-view {
     padding: 25px 0;
   }
-  .react-calendar__month-view__days{
-    .react-calendar__tile--active{
-      abbr{
-      margin: auto;
+  .react-calendar__month-view__days {
+    .react-calendar__tile--active {
+      abbr {
+        margin: auto;
         justify-content: center;
-    align-items: center;
+        align-items: center;
         display: flex;
         width: 28px;
         height: 28px;
@@ -270,11 +274,12 @@
       }
     }
   }
-  .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
     background: unset;
-}
-.react-calendar__tile--active {
-     background: $white-color; 
+  }
+  .react-calendar__tile--active {
+    background: $white-color;
     color: white;
-}
+  }
 }

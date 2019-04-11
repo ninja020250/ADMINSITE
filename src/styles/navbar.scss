@@ -38,7 +38,7 @@ $ONEDARD: #333652;
       font-size: 10px;
       height: 15px;
       padding-top: 0px;
-       left: 28px;
+      left: 28px;
     }
     .count2 {
       font-weight: bold;
@@ -78,7 +78,7 @@ $ONEDARD: #333652;
       }
       .card-header {
         padding: 0.75rem 1.25rem;
-        @include background-gradien-to-right(#324bc3, #ec3f8c);
+        @include background-gradien-to-right($blue-default, $pink-default);
         color: $white-color;
         font-weight: bold;
       }
@@ -106,46 +106,28 @@ $ONEDARD: #333652;
   }
 
   // search box
+  .search-box {
+    position: relative;
+    i {
+      position: absolute;
+      font-size: 25px;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    input {
+      width: 250px;
+      text-indent: 32px;
+    }
+  }
   #navbarSupportedContent {
-    .right-items{
-    display: flex;
-    align-items: center;
-   }
+    .right-items {
+      display: flex;
+      align-items: center;
+    }
     .search {
       padding: 0px 15px;
-      
-      &-box {
-        position: relative;
-        i {
-          font-size: 25px;
-          position: absolute;
-          right: 20px;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 23px !important;
-          line-height: 24px !important;
-        }
-        background-image: rgba(255, 255, 255, 255);
-        border-radius: 40px;
-        padding: 10px;
-        .search-txt {
-               width: 340px;
-              padding: 0 3px;
-              border: 1px solid #324bc3;
-              border-radius: 20px;
-              color: $black-color;
-           }
-        // &:hover {
-        //   background-image: linear-gradient(309deg, #ec3f8c, #324bc3);
-        //   .search-txt {
-        //     width: 340px;
-        //     padding: 0 3px;
-        //   }
-        //   .search-btn {
-        //     background: white;
-        //   }
-        // }
-      }
+
       &-btn {
         color: $ONEDARD !important;
         float: right;
@@ -213,3 +195,46 @@ $ONEDARD: #333652;
 //   background: white;
 //   width: calc(100% - 270px);
 // }
+
+//========================== responsive ===========================//
+
+@media (max-width: 992px) {
+  .navbar-nav{
+    flex-direction: row !important;
+    -webkit-flex-direction: row !important;
+  }
+  .navbar {
+    .search-box {
+      margin-left: unset;
+      margin: auto;
+      width: 60%;
+      position: relative;
+      i {
+        position: absolute;
+        font-size: 25px;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      input {
+        max-width: 70vw;
+        width: 100%;
+        text-indent: 32px;
+      }
+    }
+    .notification {
+      > .dropdown-menu {
+        transform: unset;
+        max-width: 80vw;
+        &::before {
+          top: 6%;
+          right: unset;
+          border-bottom: 14px solid  $blue-default;
+        }
+      }
+      .count1 {
+        // left: 50%;
+      }
+    }
+  }
+}

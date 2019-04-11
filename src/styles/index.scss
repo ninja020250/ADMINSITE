@@ -1,35 +1,44 @@
-@import "./utility/variable";
-@import "./utility/mixin";
-// @import "./sidebar.scss";
-@import "./navbar.scss";
-@import "./newsidebar.scss";
-@import "./overviewCard.scss";
-@import "./activities.scss";
-@import "./table/index.scss";
-@import "./button/button.scss";
-@import "./calendar.scss";
-@import "./payoutAVG.scss";
-@import "./weather.scss";
-@import "./fromInput.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato');
-*{
-  font-family: Lato;
-}
-// ::-webkit-scrollbar { 
-//   display: none; 
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import "mixins";
+@import "variables";
+@import "navbar.scss";
+@import "newsidebar.scss";
+@import "overviewCard.scss";
+@import "activities.scss";
+@import "table/index.scss";
+@import "button/button.scss";
+@import "calendar.scss";
+@import "payoutAVG.scss";
+@import "weather.scss";
+@import "formInput.scss";
+@import "comingSoon.scss";
+
+// *{
+//   font-family: Lato;
 // }
+/// utility class
+.fr {
+  float: right;
+}
+.round {
+  border-radius: 20px !important;
+}
+.square {
+  border-radius: 0px;
+}
+.bg-invisible {
+  background: rgba(255, 255, 255, 0);
+}
 .box-shadow-2 {
   box-shadow: 0 10px 18px 0 rgba(62, 57, 107, 0.2);
 }
-.round {
-  border-radius: 1.5rem;
-}
+// .round {
+//   border-radius: 1.5rem;
+// }
 .btn-min-width {
   min-width: 8.5rem;
 }
-.pull-right {
-  float: right;
-}
+
 body {
   font-family: "Lato", sans-serif;
   a {
@@ -55,13 +64,15 @@ body {
 }
 
 // standard card
-.card {
-  border: none;
-  background-color: rgba(255,255,255,0);
+.card-custom {
+  border: none !important;
+  @include background_invisible();
+  // background-color: rgba(255, 255, 255, 0) !important;
   .card-header {
-    padding: .75rem 0;
+    padding: 0.75rem 0;
     border-bottom: none;
-    background-color: rgba(255,255,255,0);
+    @include background_invisible();
+    // background-color: rgba(255, 255, 255, 0);
     .card-title {
       font-size: $font-size-medium;
       font-weight: bold;
@@ -81,35 +92,24 @@ body {
     box-shadow: 0px 8px 25px 0 rgba(16, 17, 43, 0.08);
   }
 }
-// #gradient-vertical{
-//   --color-stop-1: #00c3ff;
-//   --color-stop-2: #77e190;
-//   --color-stop-3: #ffff1c;
-// }
-// .svg path{
-//   fill: url(#my-cool-gradient)  #447799;
 
-// }
 .svg {
   width: 20px;
   height: 20px;
 }
-.white-svg path{
+.white-svg path {
   fill: url(#white-gradient) #ffff;
-  &:hover{
-    fill: url(#my-cool-gradient)  #447799;
+  &:hover {
+    fill: url(#my-cool-gradient) #447799;
   }
 }
-.pure-svg path{
+.pure-svg path {
   fill: url(#white-gradient) #ffff;
 }
-.custom-icon{
+.custom-icon {
   margin: 0 5px;
   width: 14px;
 }
-.round{
-  border-radius: 20px;  
-}
-.square{
-  border-radius:0px;  
+.svg-linear path{
+  fill: url(#my-cool-gradient) #447799;
 }

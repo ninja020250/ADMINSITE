@@ -8,18 +8,18 @@
 
   /* Track */
   ::-webkit-scrollbar-track {
-    @include color-gradient-to-top(#ec3f8c, #324bc3);
+    @include color-gradient-to-top($pink-default, $blue-default);
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    @include color-gradient-to-top(#ec3f8c, #324bc3);
+    @include color-gradient-to-top($pink-default, $blue-default);
     border-radius: 5px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    @include color-gradient-to-top(#ec3f8c, #324bc3);
+    @include color-gradient-to-top($pink-default, $blue-default);
   }
   // end scroll bar
   transition: 0.5s;
@@ -181,23 +181,7 @@
     .svg path {
       fill: url(#white-gradient) #ffff;
     }
-    // i {
-    //   font-size: 22px;
-    //   float: left;
-    //   margin-right: 15px;
-    //   line-height: 30px;
-    //   width: 30px;
-    //   text-align: center;
-    //   color: $white-color;
-    //   // color: #ec3f8c;
-    //   // @include color-gradient-to-top(#ec3f8c, #324bc3);
-    // }
 
-    // .caret{
-    //     margin-top: 13px;
-    //     position: absolute;
-    //     right: 30px;
-    // }
   }
   &:after,
   &:before {
@@ -241,10 +225,10 @@
     @include icon-gradient($new-red, $red-color-bottom);
   }
   &[data-color="purple"]:after {
-    @include icon-gradient-to-top($purple-color-top, $purple-color-bottom);
+    @include background-gradient-to-top($purple-color-top, $purple-color-bottom);
   }
   &[data-color="pink"]:after {
-    @include icon-gradient-to-top($pink-color-top, $pink-color-bottom);
+    @include background-gradient-to-top($pink-color-top, $pink-color-bottom);
   }
 }
 .main-panel {
