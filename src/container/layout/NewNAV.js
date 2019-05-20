@@ -4,14 +4,14 @@ import $ from "jquery";
 export default class NewNAV extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar   ">
         <div className="container-fluid">
           <div id="sidebarCollapse" className="">
             <i className="fa fa-bars" aria-hidden="true" />
             <span className="ml-3"> Dashboard</span>
           </div>
           <SearchBox class="ml-5" />
-          <button
+          {/* <button
             className="btn btn-dark d-inline-block d-lg-none ml-auto"
             type="button"
             data-toggle="collapse"
@@ -21,11 +21,33 @@ export default class NewNAV extends Component {
             aria-label="Toggle navigation"
           >
             <i className="fa fa-bars" aria-hidden="true" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          </button> */}
+          <ul class="nav">
+            <li className="nav-item active">
+              <span
+                className="nav-link"
+                href=""
+                data-toggle="modal"
+                data-target="#searchBoxModal"
+              >
+                <i class="fa fa-search" />
+              </span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link" href="">
+                <DropDownNotification />
+              </span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link" href="">
+                <UserButton />
+              </span>
+            </li>
+          </ul>
+          {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="nav navbar-nav ml-auto  right-items">
               <li className="nav-item active">
-           
+              <i class="fa fa-search" />
               </li>
               <li className="nav-item">
                 <span className="nav-link" href="">
@@ -38,7 +60,7 @@ export default class NewNAV extends Component {
                 </span>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     );
@@ -57,9 +79,27 @@ class SearchBox extends Component {
       //   <i className="fa fa-search" aria-hidden="true" />
       // </div>
 
-      <div class={`search-box ${this.props.class}`}>
-        <i class="fa fa-search" />
-        <input className="form-control" placeholder="Search term" />
+      // <div class={`search-box ${this.props.class}`}>
+      //   <i class="fa fa-search" />
+      //   <input className="form-control" placeholder="Search term" />
+      // </div>
+      <div
+        class="modal fade search-box-navigation"
+        id="searchBoxModal"
+        data-backdrop="false"
+        role="dialog"
+        tabIndex="-1"
+        aria-labelledby="searchBoxModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <input  placeholder="Search..." />
+              <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"/>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -144,20 +184,6 @@ class UserButton extends Component {
             alt="justin"
           />
         </div>
-        {/* <div
-          className="dropdown-menu user-dropdown"
-          aria-labelledby="dropdownUser"
-        >
-          <a className="dropdown-item" href="#">
-            Action
-          </a>
-          <a className="dropdown-item" href="#">
-            Another action
-          </a>
-          <a className="dropdown-item" href="#">
-            Something else here
-          </a>
-        </div> */}
       </div>
     );
   }

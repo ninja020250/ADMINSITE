@@ -12,13 +12,17 @@
 @import "weather.scss";
 @import "formInput.scss";
 @import "comingSoon.scss";
-
+@import "./button/checkBox.scss";
 // *{
 //   font-family: Lato;
 // }
 /// utility class
+
 .fr {
   float: right;
+}
+.bold{
+  font-weight: bold;
 }
 .round {
   border-radius: 20px !important;
@@ -96,6 +100,7 @@ body {
 .svg {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .white-svg path {
   fill: url(#white-gradient) #ffff;

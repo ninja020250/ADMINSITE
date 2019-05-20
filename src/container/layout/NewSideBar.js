@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import { sidebar_background_image } from "../../common/image";
+import {LINK_HOME,LINK_FORM_INPUT,LINK_CHECKBOX_RADIO,LINK_INPUT_GROUPS } from '../../common/constant';
 // import icon
 import {
   sidebar_logo,
@@ -13,20 +14,20 @@ import {
 
 const links = [
   {
-    to: "/",
+    to: LINK_HOME,
     name: "Dashboard",
     icon: dashboard_icon_svg,
     id: "tabSubDashboard",
     isActive: true,
     childrens: [
       {
-        to: "/",
+        to: LINK_HOME,
         name: "home"
       }
     ]
   },
   {
-    to: "/",
+    to: LINK_HOME,
     name: "Layouts",
     icon: layout_icon_svg,
     id: "tabSubLayout",
@@ -39,7 +40,7 @@ const links = [
     ]
   },
   {
-    to: "/",
+    to:LINK_HOME,
     name: "UI Components",
     icon: uiComponent_icon_svg,
     id: "tabSubUIComponents",
@@ -52,20 +53,28 @@ const links = [
     ]
   },
   {
-    to: "/",
+    to: LINK_HOME,
     name: "Forms",
     icon: form_icon_svg,
     id: "tabSubFormInput",
     isActive: false,
     childrens: [
       {
-        to: "/form-input",
+        to: LINK_FORM_INPUT,
         name: "Form input"
+      },
+      {
+        to: LINK_CHECKBOX_RADIO,
+        name: "Checkbox & Radio"
+      },
+      {
+        to: LINK_INPUT_GROUPS,
+        name: "Input Groups"
       }
     ]
   },
   {
-    to: "/",
+    to: LINK_HOME,
     name: "Tables",
     icon: table_icon_svg,
     id: "tabSubTable",
@@ -79,23 +88,24 @@ const links = [
   }
 ];
 export default class NewSideBar extends Component {
-  cónt;
   render() {
     return (
       <nav id="sidebar" data-color="blue">
         <div className="sidebar-header">
-          <h3
-            className="sidebar-header-title"
-            onClick={() => {
-              this.props.history.push("/");
-            }}
-          >
-            <img
-              src={sidebar_logo}
-              focusable="false"
-              className="svg nav-custom-icon mr-3"
-              alt=""
-            />
+          <h3 className="sidebar-header-title">
+            <a
+              href=""
+              onClick={() => {
+                this.props.history.push("/home");
+              }}
+            >
+              <img
+                src={sidebar_logo}
+                focusable="false"
+                className="svg nav-custom-icon mr-3"
+                alt=""
+              />
+            </a>
             ADMIN SITE
           </h3>
           <strong>

@@ -30,12 +30,12 @@ export default class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item navbar-logo" id="sidebartoggler">
-              <a href="#" className="sidebartoggler nav-link">
+              <a href="" className="sidebartoggler nav-link">
                 <i className="fa fa-bars" aria-hidden="true" />
               </a>
             </li>
             <li className="nav-item navbar-logo-text">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="">
                 Dashboard
               </a>
             </li>
@@ -185,13 +185,13 @@ class UserButton extends Component {
           className="dropdown-menu user-dropdown"
           aria-labelledby="dropdownUser"
         >
-          <a className="dropdown-item" href="#">
+          <a className="dropdown-item" href="">
             Action
           </a>
-          <a className="dropdown-item" href="#">
+          <a className="dropdown-item" href="">
             Another action
           </a>
-          <a className="dropdown-item" href="#">
+          <a className="dropdown-item" href="">
             Something else here
           </a>
         </div>

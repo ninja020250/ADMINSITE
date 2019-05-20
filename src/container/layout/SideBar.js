@@ -44,7 +44,7 @@ export default class SideBar extends Component {
       >
         <div className="sidebar-wrapper">
           <div className="logo">
-            <div href="#" className="simple-text">
+            <div href="" className="simple-text">
               <img
                 src={sidebar_logo}
                 focusable="false"
@@ -52,7 +52,7 @@ export default class SideBar extends Component {
                 alt=""
               />
               <a
-                href="#"
+                href=""
                 className="logo-text"
                 onClick={() => {
                   this.navigateTo("/");
@@ -70,7 +70,7 @@ export default class SideBar extends Component {
               }}
             >
               <a
-                href="#"
+                href=""
                 className="has-arrow collapsed"
                 data-toggle="collapse"
                 href="#dashboard"
@@ -87,19 +87,19 @@ export default class SideBar extends Component {
               </a>
               <ul className="nav collapse" id="dashboard">
                 <li>
-                  <a href="#">Dashboard 01</a>
+                  <a href="">Dashboard 01</a>
                 </li>
                 <li>
-                  <a href="#">Dashboard 02</a>
+                  <a href="">Dashboard 02</a>
                 </li>
                 <li>
-                  <a href="#">Dashboard 03</a>
+                  <a href="">Dashboard 03</a>
                 </li>
               </ul>
             </li>
             <li className="li-outer">
               <a
-                href="#"
+                href=""
                 className="has-arrow collapsed"
                 data-toggle="collapse"
                 href="#layout"
@@ -117,19 +117,19 @@ export default class SideBar extends Component {
               </a>
               <ul className="nav collapse" id="layout">
                 <li>
-                  <a href="#">Layout 01</a>
+                  <a href="">Layout 01</a>
                 </li>
                 <li>
-                  <a href="#">Layout 02</a>
+                  <a href="">Layout 02</a>
                 </li>
                 <li>
-                  <a href="#">Layout 03</a>
+                  <a href="">Layout 03</a>
                 </li>
               </ul>
             </li>
             <li className="li-outer">
               <a
-                href="#"
+                href=""
                 className="has-arrow collapsed"
                 data-toggle="collapse"
                 href="#ui-components"
@@ -147,13 +147,13 @@ export default class SideBar extends Component {
               </a>
               <ul className="nav collapse" id="ui-components">
                 <li>
-                  <a href="#">Layout 01</a>
+                  <a href="">Layout 01</a>
                 </li>
                 <li>
-                  <a href="#">Layout 02</a>
+                  <a href="">Layout 02</a>
                 </li>
                 <li>
-                  <a href="#">Layout 03</a>
+                  <a href="">Layout 03</a>
                 </li>
               </ul>
             </li>
@@ -164,7 +164,7 @@ export default class SideBar extends Component {
               }}
             >
               <a
-                href="#" className="has-arrow collapsed"
+                href="" className="has-arrow collapsed"
                 data-toggle="collapse"
                 href="#form"
                 aria-expanded="false"
@@ -190,16 +190,16 @@ export default class SideBar extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#">Form 02</a>
+                  <a href="">Form 02</a>
                 </li>
                 <li>
-                  <a href="#">Form 03</a>
+                  <a href="">Form 03</a>
                 </li>
               </ul>
             </li>
             <li className="li-outer">
               <a
-                href="#"
+                href=""
                 className="has-arrow collapsed"
                 data-toggle="collapse"
                 href="#table"
@@ -217,13 +217,13 @@ export default class SideBar extends Component {
               </a>
               <ul className="nav collapse" id="table">
                 <li>
-                  <a href="#">Table 01</a>
+                  <a href="">Table 01</a>
                 </li>
                 <li>
-                  <a href="#">Table 02</a>
+                  <a href="">Table 02</a>
                 </li>
                 <li>
-                  <a href="#">Table 03</a>
+                  <a href="">Table 03</a>
                 </li>
               </ul>
             </li>

@@ -129,7 +129,7 @@ const lineChartDoubleData = {
       data: [2, 4, 8, 4, 1, 2, 4],
       backgroundColor: ["rgba(255,255,255,0)"],
       borderColor: ["#00bd12"],
-      borderWidth: 5
+      borderWidth: 6
     },
     {
       pointBackgroundColor: "rgba(255,255,255,0)",
@@ -139,7 +139,7 @@ const lineChartDoubleData = {
       data: [0, 5, 2, 3, 6, 2, 1],
       backgroundColor: ["rgba(255,255,255,0)"],
       borderColor: ["#0084ea"],
-      borderWidth: 5
+      borderWidth: 6
     }
   ]
 };
@@ -152,7 +152,7 @@ const lineChartDoubleOption = {
     for (var i = 0; i < chart.data.datasets.length; i++) {
       text.push(
         `<li style=" margin: 10px;    display: inline;"><span style="background: 
-            ${chart.data.datasets[i].borderColor[0]}; width: 8px; height: 12px " className="badge"> </span>
+            ${chart.data.datasets[i].borderColor[0]}; width: 8px; height: 12px ;    border-radius: 6px;" className="badge"> </span>
             <span>${chart.data.datasets[i].label}</span></li>`
       );
       // if (chart.data.datasets[i].label) {

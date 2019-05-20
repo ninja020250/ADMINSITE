@@ -24,6 +24,7 @@ export default class Calendar extends Component {
             <CalendarTask icon={iconTraining} color="orange" />
             <CalendarTask icon={iconHealthCheck} color="pink" />
             <CalendarTask icon={iconHealthCheck} color="pink" />
+            <CalendarTask icon={iconTraining} color="green" />
           </div>
         </div>
       </div>
@@ -32,9 +33,7 @@ export default class Calendar extends Component {
 }
 
 class CalendarTask extends Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     return (
@@ -49,7 +48,7 @@ class CalendarTask extends Component {
             <p className="mb-0">9:00 AM ~ 10:00 AM</p>
           </div>
           <div className="col-3 task-content-icon bd-placeholder-img align-self-center">
-            <i className="fa fa-clock-o" aria-hidden="true" />
+            <i className="fa fa-clock-o mr-2" aria-hidden="true" />
             <i className="fa fa-trash-o" aria-hidden="true" />
           </div>
         </div>

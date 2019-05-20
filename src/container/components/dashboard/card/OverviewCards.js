@@ -4,7 +4,6 @@ import {product_sold,new_customers,net_profit,customer_satisfication} from '../.
 const cardData = [
   {
     background: "card-orange",
-    // icon: "icon-product-sold",
     icon:product_sold,
     title: "Product sold",
     parameter: "11,256",
@@ -12,7 +11,6 @@ const cardData = [
   },
   {
     background: "card-blue",
-    // icon: "icon-net-profit",
     icon:net_profit,
     title: "Product sold",
     parameter: "$278",
@@ -20,7 +18,6 @@ const cardData = [
   },
   {
     background: "card-green",
-    icon: "icon-new-customers",
     icon: new_customers,
     title: "New Customers",
     parameter: "520",
@@ -28,7 +25,6 @@ const cardData = [
   },
   {
     background: "card-pink",
-    // icon: "icon-customer-satisfication",
     icon:customer_satisfication,
     title: "Customer satisfication",
     parameter: "666",
@@ -45,9 +41,8 @@ export default class OverviewCards extends Component {
           icon={data.icon}
           title={data.title}
           parameter={data.parameter}
-        
           chartId={data.chartId}
-        />
+        />  
        </div>
       );
     });

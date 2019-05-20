@@ -1,5 +1,5 @@
 .bg-gradient-x-danger {
-  @include background-gradien-to-right(#ec3f8c, #ff8fc1);
+  @include background-gradient-to-right(#ec3f8c, #ff8fc1);
 }
 .progress-sm {
   height: 0.3rem !important;
@@ -9,5 +9,5 @@
   background-color: #fff;
 }
 .progress-bar-full {
-  @include background-gradien-to-right(#324bc3, #5f7bff);
+  @include background-gradient-to-right(#324bc3, #5f7bff);
 }
