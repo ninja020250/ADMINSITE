@@ -2,7 +2,7 @@
     DEMO STYLE
 */
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import  url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 body {
   font-family: "Poppins", sans-serif;
   background: #fafafa;
@@ -30,6 +30,7 @@ a:focus {
   border: none;
   border-radius: 0;
   margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
@@ -49,12 +50,15 @@ i,
 span {
   display: inline-block;
 }
-#sidebarCollapse {
+#sidebarCollapse{
   cursor: pointer;
   font-size: 25px;
-  i {
+  i{
+
+
   }
 }
+
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -84,7 +88,7 @@ span {
   text-align: center;
 }
 
-#sidebar .sidebar-header h3 {
+#sidebar .sidebar-header h3{
   display: flex;
   align-items: center;
 }
@@ -92,14 +96,15 @@ span {
 #sidebar.active .CTAs {
   display: none;
 }
-.sidebar-header .sidebar-header-title {
+.sidebar-header .sidebar-header-title{
   font-size: 18px;
   font-weight: bold;
-  img {
+  img{
     width: 36px;
-    height: 31px;
+  height: 31px;
   }
 }
+
 
 #sidebar ul li a strong {
   display: unset;
@@ -108,6 +113,7 @@ span {
   display: none;
 }
 #sidebar.active ul li a span {
+
   display: none;
 }
 
@@ -117,10 +123,10 @@ span {
 // }
 
 #sidebar.active .sidebar-header strong {
-  .svg {
+  .svg{
     width: 36px;
     height: 31px;
-  }
+   }
   display: block;
 }
 
@@ -165,12 +171,13 @@ span {
 
 #sidebar .sidebar-header {
   padding: 18.5px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 #sidebar .sidebar-header strong {
   display: none;
   font-size: 1.8em;
+
 }
 
 #sidebar ul.components {
@@ -249,8 +256,9 @@ a[aria-expanded="true"] {
 
   box-shadow: 0px 7px 30px 0 rgba(18, 18, 74, 0.4);
   color: #222222;
+
 }
-#sidebar.active ul li.active > a {
+#sidebar.active ul li.active > a{
   background-color: #e1f0ff;
 }
 #sidebar ul li.active > ul {
@@ -264,7 +272,7 @@ a[data-toggle="collapse"] {
   position: relative;
 }
 
-#sidebar .dropdown-toggle::after {
+.dropdown-toggle::after {
   display: block;
   position: absolute;
   top: 50%;
@@ -325,7 +333,7 @@ a.article:hover {
     text-align: center;
     margin-left: -80px !important;
   }
-  #sidebar .dropdown-toggle::after {
+  .dropdown-toggle::after {
     top: auto;
     bottom: 10px;
     right: 50%;
@@ -338,12 +346,14 @@ a.article:hover {
   }
   #sidebar .sidebar-header h3,
   #sidebar .CTAs {
+  
     display: none;
   }
-  .sidebar-header .sidebar-header-title {
+  .sidebar-header .sidebar-header-title{
     font-size: 18px;
   }
   #sidebar .sidebar-header strong {
+  
     display: block;
   }
 

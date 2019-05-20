@@ -113,12 +113,14 @@ export default class Table1 extends Component {
         <div className="card card-custom">
           <div className="card-header">
             <h4 className="card-title">Recent Transaction</h4>
-     
+            <a href="" className="heading-element-toggle">
+              <i className="la la-ellipsis-v font-medium-3" />
+            </a>
             <div className="heading-elements">
               <ul className="list-inline mb-0">
                 <li>
                   <a
-                    href=""
+                    href="#"
                     className="btn btn-sm box-shadow-2 btn-min-width puoll-right round "
                     target="_blank"
                   >
@@ -128,13 +130,13 @@ export default class Table1 extends Component {
               </ul>
             </div>
           </div>
-          <div className="card-body ">
+          <div className="card-body mt-1">
             <div className="table-responsive">
               <table className="recent-orders table  table-xlmb-0">
                 <thead>
                   <tr>
                     <th className="border-top-0">
-                      <a href="">Invoice#</a>
+                      <a href="#">Invoice#</a>
                     </th>
                     <th className="border-top-0">Customer Name</th>
                     <th className="border-top-0">Products</th>

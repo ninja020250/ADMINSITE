@@ -29,7 +29,7 @@
       border-radius: 15px;
       top: 0;
       left: 0;
-      @include background-gradient-to-right($blue-default, $pink-default);
+      @include background-gradien-to-right($blue-default, $pink-default);
       font-weight: bold;
       color: $white-color;
       transition: 0.4s;
